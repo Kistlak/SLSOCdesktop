@@ -1,0 +1,15 @@
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\bin\Debug\SLSOCdesktop.exe.config
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\bin\Debug\SLSOCdesktop.exe
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\bin\Debug\SLSOCdesktop.pdb
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.Login.resources
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.exe
+c:\users\user\documents\visual studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.BusFac.BusMenu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.ComFac.ComMenu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.EngFac.EngMenu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.UniMain.UniMenu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.UniMain.Lecturers.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.UniMain.Students.resources
