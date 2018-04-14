@@ -35,10 +35,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnTimetable = new System.Windows.Forms.Button();
-            this.btnModules = new System.Windows.Forms.Button();
-            this.btnStudnet = new System.Windows.Forms.Button();
-            this.btnLectures = new System.Windows.Forms.Button();
+            this.btnStufeed = new System.Windows.Forms.Button();
+            this.btnTimetables = new System.Windows.Forms.Button();
+            this.btnMod = new System.Windows.Forms.Button();
+            this.btnLecstu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -110,45 +110,45 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnTimetable
+            // btnStufeed
             // 
-            this.btnTimetable.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimetable.Location = new System.Drawing.Point(376, 249);
-            this.btnTimetable.Name = "btnTimetable";
-            this.btnTimetable.Size = new System.Drawing.Size(299, 76);
-            this.btnTimetable.TabIndex = 44;
-            this.btnTimetable.Text = "Timetable";
-            this.btnTimetable.UseVisualStyleBackColor = true;
+            this.btnStufeed.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStufeed.Location = new System.Drawing.Point(376, 249);
+            this.btnStufeed.Name = "btnStufeed";
+            this.btnStufeed.Size = new System.Drawing.Size(299, 76);
+            this.btnStufeed.TabIndex = 44;
+            this.btnStufeed.Text = "Studnet Feedbacks";
+            this.btnStufeed.UseVisualStyleBackColor = true;
             // 
-            // btnModules
+            // btnTimetables
             // 
-            this.btnModules.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(37, 249);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(299, 76);
-            this.btnModules.TabIndex = 43;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
+            this.btnTimetables.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimetables.Location = new System.Drawing.Point(37, 249);
+            this.btnTimetables.Name = "btnTimetables";
+            this.btnTimetables.Size = new System.Drawing.Size(299, 76);
+            this.btnTimetables.TabIndex = 43;
+            this.btnTimetables.Text = "Timetables";
+            this.btnTimetables.UseVisualStyleBackColor = true;
             // 
-            // btnStudnet
+            // btnMod
             // 
-            this.btnStudnet.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudnet.Location = new System.Drawing.Point(376, 133);
-            this.btnStudnet.Name = "btnStudnet";
-            this.btnStudnet.Size = new System.Drawing.Size(299, 76);
-            this.btnStudnet.TabIndex = 42;
-            this.btnStudnet.Text = "Students";
-            this.btnStudnet.UseVisualStyleBackColor = true;
+            this.btnMod.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMod.Location = new System.Drawing.Point(376, 133);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(299, 76);
+            this.btnMod.TabIndex = 42;
+            this.btnMod.Text = "Modules";
+            this.btnMod.UseVisualStyleBackColor = true;
             // 
-            // btnLectures
+            // btnLecstu
             // 
-            this.btnLectures.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLectures.Location = new System.Drawing.Point(37, 133);
-            this.btnLectures.Name = "btnLectures";
-            this.btnLectures.Size = new System.Drawing.Size(299, 76);
-            this.btnLectures.TabIndex = 41;
-            this.btnLectures.Text = "Lectures";
-            this.btnLectures.UseVisualStyleBackColor = true;
+            this.btnLecstu.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLecstu.Location = new System.Drawing.Point(37, 133);
+            this.btnLecstu.Name = "btnLecstu";
+            this.btnLecstu.Size = new System.Drawing.Size(299, 76);
+            this.btnLecstu.TabIndex = 41;
+            this.btnLecstu.Text = "Lectures / Students";
+            this.btnLecstu.UseVisualStyleBackColor = true;
             // 
             // EngMenu
             // 
@@ -163,10 +163,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnTimetable);
-            this.Controls.Add(this.btnModules);
-            this.Controls.Add(this.btnStudnet);
-            this.Controls.Add(this.btnLectures);
+            this.Controls.Add(this.btnStufeed);
+            this.Controls.Add(this.btnTimetables);
+            this.Controls.Add(this.btnMod);
+            this.Controls.Add(this.btnLecstu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EngMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -185,9 +185,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnTimetable;
-        private System.Windows.Forms.Button btnModules;
-        private System.Windows.Forms.Button btnStudnet;
-        private System.Windows.Forms.Button btnLectures;
+        private System.Windows.Forms.Button btnStufeed;
+        private System.Windows.Forms.Button btnTimetables;
+        private System.Windows.Forms.Button btnMod;
+        private System.Windows.Forms.Button btnLecstu;
     }
 }

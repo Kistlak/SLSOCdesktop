@@ -54,6 +54,12 @@
     <Compile Include="BusFac\BusMenu.Designer.cs">
       <DependentUpon>BusMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComFac\Comlecstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComFac\Comlecstu.Designer.cs">
+      <DependentUpon>Comlecstu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComFac\ComMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="BusFac\BusMenu.resx">
       <DependentUpon>BusMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComFac\Comlecstu.resx">
+      <DependentUpon>Comlecstu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComFac\ComMenu.resx">
       <DependentUpon>ComMenu.cs</DependentUpon>
