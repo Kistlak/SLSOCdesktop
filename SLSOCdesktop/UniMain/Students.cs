@@ -131,5 +131,24 @@ namespace SLSOCdesktop.UniMain
             this.studentsTableAdapter.Fill(this.slsocDataSet1.students);
 
         }
+
+        private void btnStudnets_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Now you are in Student panel");
+        }
+
+        private void btnLecturers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UniMain.Lecturers lecform = new UniMain.Lecturers();
+            lecform.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login loginform = new Login();
+            loginform.ShowDialog();
+        }
     }
 }

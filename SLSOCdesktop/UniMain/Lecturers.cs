@@ -148,5 +148,12 @@ namespace SLSOCdesktop.UniMain
         {
             dateTimePicker2.CustomFormat = "dd/MM/yyyy";
         }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UniMain.Students stuform = new UniMain.Students();
+            stuform.ShowDialog();
+        }
     }
 }

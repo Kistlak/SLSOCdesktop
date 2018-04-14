@@ -32,6 +32,20 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.cmbFac = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adtwoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.byearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.slsocDataSet1 = new SLSOCdesktop.slsocDataSet1();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -49,10 +63,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnTimetable = new System.Windows.Forms.Button();
             this.btnStudnets = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnModules = new System.Windows.Forms.Button();
             this.btnLecturers = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,26 +79,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNic = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.slsocDataSet1 = new SLSOCdesktop.slsocDataSet1();
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studentsTableAdapter = new SLSOCdesktop.slsocDataSet1TableAdapters.studentsTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adtwoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.byearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.facDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDelete
@@ -136,6 +134,89 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1267, 207);
             this.dataGridView1.TabIndex = 106;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fnameDataGridViewTextBoxColumn
+            // 
+            this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
+            this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
+            this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
+            // 
+            // lnameDataGridViewTextBoxColumn
+            // 
+            this.lnameDataGridViewTextBoxColumn.DataPropertyName = "lname";
+            this.lnameDataGridViewTextBoxColumn.HeaderText = "lname";
+            this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
+            // 
+            // adoneDataGridViewTextBoxColumn
+            // 
+            this.adoneDataGridViewTextBoxColumn.DataPropertyName = "adone";
+            this.adoneDataGridViewTextBoxColumn.HeaderText = "adone";
+            this.adoneDataGridViewTextBoxColumn.Name = "adoneDataGridViewTextBoxColumn";
+            // 
+            // adtwoDataGridViewTextBoxColumn
+            // 
+            this.adtwoDataGridViewTextBoxColumn.DataPropertyName = "adtwo";
+            this.adtwoDataGridViewTextBoxColumn.HeaderText = "adtwo";
+            this.adtwoDataGridViewTextBoxColumn.Name = "adtwoDataGridViewTextBoxColumn";
+            // 
+            // cityDataGridViewTextBoxColumn
+            // 
+            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "city";
+            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            // 
+            // numDataGridViewTextBoxColumn
+            // 
+            this.numDataGridViewTextBoxColumn.DataPropertyName = "num";
+            this.numDataGridViewTextBoxColumn.HeaderText = "num";
+            this.numDataGridViewTextBoxColumn.Name = "numDataGridViewTextBoxColumn";
+            // 
+            // byearDataGridViewTextBoxColumn
+            // 
+            this.byearDataGridViewTextBoxColumn.DataPropertyName = "byear";
+            this.byearDataGridViewTextBoxColumn.HeaderText = "byear";
+            this.byearDataGridViewTextBoxColumn.Name = "byearDataGridViewTextBoxColumn";
+            // 
+            // nicDataGridViewTextBoxColumn
+            // 
+            this.nicDataGridViewTextBoxColumn.DataPropertyName = "nic";
+            this.nicDataGridViewTextBoxColumn.HeaderText = "nic";
+            this.nicDataGridViewTextBoxColumn.Name = "nicDataGridViewTextBoxColumn";
+            // 
+            // facDataGridViewTextBoxColumn
+            // 
+            this.facDataGridViewTextBoxColumn.DataPropertyName = "fac";
+            this.facDataGridViewTextBoxColumn.HeaderText = "fac";
+            this.facDataGridViewTextBoxColumn.Name = "facDataGridViewTextBoxColumn";
+            // 
+            // jdateDataGridViewTextBoxColumn
+            // 
+            this.jdateDataGridViewTextBoxColumn.DataPropertyName = "jdate";
+            this.jdateDataGridViewTextBoxColumn.HeaderText = "jdate";
+            this.jdateDataGridViewTextBoxColumn.Name = "jdateDataGridViewTextBoxColumn";
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // studentsBindingSource
+            // 
+            this.studentsBindingSource.DataMember = "students";
+            this.studentsBindingSource.DataSource = this.slsocDataSet1;
+            // 
+            // slsocDataSet1
+            // 
+            this.slsocDataSet1.DataSetName = "slsocDataSet1";
+            this.slsocDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnUpdate
             // 
@@ -271,6 +352,7 @@
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // txtLname
             // 
@@ -309,16 +391,6 @@
             this.label11.TabIndex = 94;
             this.label11.Text = "Password :";
             // 
-            // btnTimetable
-            // 
-            this.btnTimetable.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimetable.Location = new System.Drawing.Point(311, 3);
-            this.btnTimetable.Name = "btnTimetable";
-            this.btnTimetable.Size = new System.Drawing.Size(96, 31);
-            this.btnTimetable.TabIndex = 3;
-            this.btnTimetable.Text = "Timetable";
-            this.btnTimetable.UseVisualStyleBackColor = true;
-            // 
             // btnStudnets
             // 
             this.btnStudnets.BackColor = System.Drawing.Color.Red;
@@ -330,29 +402,18 @@
             this.btnStudnets.TabIndex = 0;
             this.btnStudnets.Text = "Students";
             this.btnStudnets.UseVisualStyleBackColor = false;
+            this.btnStudnets.Click += new System.EventHandler(this.btnStudnets_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Controls.Add(this.btnTimetable);
             this.panel1.Controls.Add(this.btnStudnets);
-            this.panel1.Controls.Add(this.btnModules);
             this.panel1.Controls.Add(this.btnLecturers);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1352, 37);
             this.panel1.TabIndex = 76;
-            // 
-            // btnModules
-            // 
-            this.btnModules.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(209, 3);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(96, 31);
-            this.btnModules.TabIndex = 2;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
             // 
             // btnLecturers
             // 
@@ -363,6 +424,7 @@
             this.btnLecturers.TabIndex = 1;
             this.btnLecturers.Text = "Lecturers";
             this.btnLecturers.UseVisualStyleBackColor = true;
+            this.btnLecturers.Click += new System.EventHandler(this.btnLecturers_Click);
             // 
             // label10
             // 
@@ -486,92 +548,9 @@
             this.dateTimePicker2.Value = new System.DateTime(2018, 4, 13, 15, 29, 51, 0);
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged_1);
             // 
-            // slsocDataSet1
-            // 
-            this.slsocDataSet1.DataSetName = "slsocDataSet1";
-            this.slsocDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "students";
-            this.studentsBindingSource.DataSource = this.slsocDataSet1;
-            // 
             // studentsTableAdapter
             // 
             this.studentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fnameDataGridViewTextBoxColumn
-            // 
-            this.fnameDataGridViewTextBoxColumn.DataPropertyName = "fname";
-            this.fnameDataGridViewTextBoxColumn.HeaderText = "fname";
-            this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
-            // 
-            // lnameDataGridViewTextBoxColumn
-            // 
-            this.lnameDataGridViewTextBoxColumn.DataPropertyName = "lname";
-            this.lnameDataGridViewTextBoxColumn.HeaderText = "lname";
-            this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
-            // 
-            // adoneDataGridViewTextBoxColumn
-            // 
-            this.adoneDataGridViewTextBoxColumn.DataPropertyName = "adone";
-            this.adoneDataGridViewTextBoxColumn.HeaderText = "adone";
-            this.adoneDataGridViewTextBoxColumn.Name = "adoneDataGridViewTextBoxColumn";
-            // 
-            // adtwoDataGridViewTextBoxColumn
-            // 
-            this.adtwoDataGridViewTextBoxColumn.DataPropertyName = "adtwo";
-            this.adtwoDataGridViewTextBoxColumn.HeaderText = "adtwo";
-            this.adtwoDataGridViewTextBoxColumn.Name = "adtwoDataGridViewTextBoxColumn";
-            // 
-            // cityDataGridViewTextBoxColumn
-            // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "city";
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
-            // 
-            // numDataGridViewTextBoxColumn
-            // 
-            this.numDataGridViewTextBoxColumn.DataPropertyName = "num";
-            this.numDataGridViewTextBoxColumn.HeaderText = "num";
-            this.numDataGridViewTextBoxColumn.Name = "numDataGridViewTextBoxColumn";
-            // 
-            // byearDataGridViewTextBoxColumn
-            // 
-            this.byearDataGridViewTextBoxColumn.DataPropertyName = "byear";
-            this.byearDataGridViewTextBoxColumn.HeaderText = "byear";
-            this.byearDataGridViewTextBoxColumn.Name = "byearDataGridViewTextBoxColumn";
-            // 
-            // nicDataGridViewTextBoxColumn
-            // 
-            this.nicDataGridViewTextBoxColumn.DataPropertyName = "nic";
-            this.nicDataGridViewTextBoxColumn.HeaderText = "nic";
-            this.nicDataGridViewTextBoxColumn.Name = "nicDataGridViewTextBoxColumn";
-            // 
-            // facDataGridViewTextBoxColumn
-            // 
-            this.facDataGridViewTextBoxColumn.DataPropertyName = "fac";
-            this.facDataGridViewTextBoxColumn.HeaderText = "fac";
-            this.facDataGridViewTextBoxColumn.Name = "facDataGridViewTextBoxColumn";
-            // 
-            // jdateDataGridViewTextBoxColumn
-            // 
-            this.jdateDataGridViewTextBoxColumn.DataPropertyName = "jdate";
-            this.jdateDataGridViewTextBoxColumn.HeaderText = "jdate";
-            this.jdateDataGridViewTextBoxColumn.Name = "jdateDataGridViewTextBoxColumn";
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             // 
             // Students
             // 
@@ -617,11 +596,11 @@
             this.Text = "Students";
             this.Load += new System.EventHandler(this.Students_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,10 +628,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnTimetable;
         private System.Windows.Forms.Button btnStudnets;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnLecturers;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;

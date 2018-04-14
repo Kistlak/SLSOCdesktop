@@ -32,9 +32,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnTimetable = new System.Windows.Forms.Button();
             this.btnLecturers = new System.Windows.Forms.Button();
-            this.btnModules = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -113,9 +111,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Controls.Add(this.btnTimetable);
             this.panel1.Controls.Add(this.btnLecturers);
-            this.panel1.Controls.Add(this.btnModules);
             this.panel1.Controls.Add(this.btnStudents);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -133,16 +129,6 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnTimetable
-            // 
-            this.btnTimetable.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimetable.Location = new System.Drawing.Point(311, 3);
-            this.btnTimetable.Name = "btnTimetable";
-            this.btnTimetable.Size = new System.Drawing.Size(96, 31);
-            this.btnTimetable.TabIndex = 3;
-            this.btnTimetable.Text = "Timetable";
-            this.btnTimetable.UseVisualStyleBackColor = true;
-            // 
             // btnLecturers
             // 
             this.btnLecturers.BackColor = System.Drawing.Color.Red;
@@ -156,16 +142,6 @@
             this.btnLecturers.UseVisualStyleBackColor = false;
             this.btnLecturers.Click += new System.EventHandler(this.btnLecturers_Click);
             // 
-            // btnModules
-            // 
-            this.btnModules.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(209, 3);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(96, 31);
-            this.btnModules.TabIndex = 2;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
-            // 
             // btnStudents
             // 
             this.btnStudents.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,6 +151,7 @@
             this.btnStudents.TabIndex = 1;
             this.btnStudents.Text = "Students";
             this.btnStudents.UseVisualStyleBackColor = true;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // txtNum
             // 
@@ -690,9 +667,7 @@
         #endregion
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnTimetable;
         private System.Windows.Forms.Button btnLecturers;
-        private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button btnStudents;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label label6;
