@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnStudnets = new System.Windows.Forms.Button();
+            this.btnLecstu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLecturers = new System.Windows.Forms.Button();
+            this.btnModules = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,6 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnStusearch = new System.Windows.Forms.Button();
+            this.btnTimetables = new System.Windows.Forms.Button();
+            this.btnFeedbacks = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -63,40 +65,43 @@
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnStudnets
+            // btnLecstu
             // 
-            this.btnStudnets.BackColor = System.Drawing.Color.Red;
-            this.btnStudnets.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudnets.ForeColor = System.Drawing.Color.White;
-            this.btnStudnets.Location = new System.Drawing.Point(5, 3);
-            this.btnStudnets.Name = "btnStudnets";
-            this.btnStudnets.Size = new System.Drawing.Size(96, 31);
-            this.btnStudnets.TabIndex = 0;
-            this.btnStudnets.Text = "Students";
-            this.btnStudnets.UseVisualStyleBackColor = false;
-            this.btnStudnets.Click += new System.EventHandler(this.btnStudnets_Click);
+            this.btnLecstu.BackColor = System.Drawing.Color.Red;
+            this.btnLecstu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLecstu.ForeColor = System.Drawing.Color.White;
+            this.btnLecstu.Location = new System.Drawing.Point(5, 3);
+            this.btnLecstu.Name = "btnLecstu";
+            this.btnLecstu.Size = new System.Drawing.Size(96, 31);
+            this.btnLecstu.TabIndex = 0;
+            this.btnLecstu.Text = "Lec / Stu";
+            this.btnLecstu.UseVisualStyleBackColor = false;
+            this.btnLecstu.Click += new System.EventHandler(this.btnStudnets_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.Controls.Add(this.btnFeedbacks);
+            this.panel1.Controls.Add(this.btnTimetables);
             this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Controls.Add(this.btnStudnets);
-            this.panel1.Controls.Add(this.btnLecturers);
+            this.panel1.Controls.Add(this.btnLecstu);
+            this.panel1.Controls.Add(this.btnModules);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1352, 37);
             this.panel1.TabIndex = 113;
             // 
-            // btnLecturers
+            // btnModules
             // 
-            this.btnLecturers.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLecturers.Location = new System.Drawing.Point(107, 3);
-            this.btnLecturers.Name = "btnLecturers";
-            this.btnLecturers.Size = new System.Drawing.Size(96, 31);
-            this.btnLecturers.TabIndex = 1;
-            this.btnLecturers.Text = "Lecturers";
-            this.btnLecturers.UseVisualStyleBackColor = true;
+            this.btnModules.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModules.Location = new System.Drawing.Point(107, 3);
+            this.btnModules.Name = "btnModules";
+            this.btnModules.Size = new System.Drawing.Size(96, 31);
+            this.btnModules.TabIndex = 1;
+            this.btnModules.Text = "Modules";
+            this.btnModules.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -233,6 +238,26 @@
             this.btnStusearch.UseVisualStyleBackColor = true;
             this.btnStusearch.Click += new System.EventHandler(this.btnStusearch_Click);
             // 
+            // btnTimetables
+            // 
+            this.btnTimetables.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimetables.Location = new System.Drawing.Point(209, 3);
+            this.btnTimetables.Name = "btnTimetables";
+            this.btnTimetables.Size = new System.Drawing.Size(96, 31);
+            this.btnTimetables.TabIndex = 5;
+            this.btnTimetables.Text = "Timetables";
+            this.btnTimetables.UseVisualStyleBackColor = true;
+            // 
+            // btnFeedbacks
+            // 
+            this.btnFeedbacks.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeedbacks.Location = new System.Drawing.Point(311, 3);
+            this.btnFeedbacks.Name = "btnFeedbacks";
+            this.btnFeedbacks.Size = new System.Drawing.Size(96, 31);
+            this.btnFeedbacks.TabIndex = 6;
+            this.btnFeedbacks.Text = "Feedbacks";
+            this.btnFeedbacks.UseVisualStyleBackColor = true;
+            // 
             // Comlecstu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,9 +287,9 @@
 
         #endregion
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnStudnets;
+        private System.Windows.Forms.Button btnLecstu;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnLecturers;
+        private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
@@ -278,5 +303,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnStusearch;
+        private System.Windows.Forms.Button btnFeedbacks;
+        private System.Windows.Forms.Button btnTimetables;
     }
 }

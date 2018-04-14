@@ -21,7 +21,7 @@ namespace SLSOCdesktop.ComFac
 
         private void btnStudnets_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("You are in Lecturers and Student panel");
         }
 
         void TableLoad()
@@ -49,14 +49,21 @@ namespace SLSOCdesktop.ComFac
         private void btnStusearch_Click(object sender, EventArgs e)
         {
             List<Studentsc> stus = new List<Studentsc>();
-            Studentsc t = new Studentsc();
+            Studentsc ts = new Studentsc();
             {
-                t.Username = txtUsername.Text;
+                ts.Username = txtUsername.Text;
             };
 
             Service1Client service = new Service1Client();
-            stus.Add(service.SearchStudents(t));
-            dataGridView1.DataSource = stus;
+            stus.Add(service.SearchStudents(ts));
+            dataGridView2.DataSource = stus;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login loginform = new Login();
+            loginform.ShowDialog();
         }
     }
 }
