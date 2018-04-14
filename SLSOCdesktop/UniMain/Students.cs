@@ -83,15 +83,15 @@ namespace SLSOCdesktop.UniMain
         {
             Studentsc us = new Studentsc();
             {
-                us.Username = txtUsername.Text;
                 us.Fname = txtFname.Text;
                 us.Lname = txtLname.Text;
-                //us.Adone = txtAdone.Text;
-                //us.Adtwo = txtAddtwo.Text;
-                //us.City = txtCity.Text;
-                //us.Number = txtNum.Text;
-                //us.Nic = txtNic.Text;
-                //us.Password = txtPassword.Text;
+                us.Adone = txtAdone.Text;
+                us.Adtwo = txtAddtwo.Text;
+                us.City = txtCity.Text;
+                us.Number = txtNum.Text;
+                us.Nic = txtNic.Text;
+                us.Username = txtUsername.Text;
+                us.Password = txtPassword.Text;
             };
 
             Service1Client service = new Service1Client();
