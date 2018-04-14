@@ -85,6 +85,15 @@ namespace SLSOCdesktop.UniMain
                 ul.Username = txtUsername.Text;
                 ul.Fname = txtFname.Text;
                 ul.Lname = txtLname.Text;
+                ul.Adone = txtLname.Text;
+                ul.Adtwo = txtLname.Text;
+                ul.City = txtLname.Text;
+                ul.Number = txtLname.Text;
+                ul.Moduleone = txtModone.Text;
+                ul.Moduletwo = txtModtwo.Text;
+                ul.Modulethree = txtModthree.Text;
+                ul.Rdate = dateTimePicker2.Value.ToString();
+                ul.Password = txtLname.Text;
             };
 
             Service1Client service = new Service1Client();
