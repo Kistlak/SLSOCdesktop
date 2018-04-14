@@ -16,7 +16,7 @@ namespace SLSOCdesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ComFac.Comlecstu());
+            Application.Run(new ComFac.ComAcademic());
         }
     }
 }

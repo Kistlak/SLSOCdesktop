@@ -37,7 +37,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnStufeed = new System.Windows.Forms.Button();
             this.btnTimetables = new System.Windows.Forms.Button();
-            this.btnModules = new System.Windows.Forms.Button();
+            this.btnAcademic = new System.Windows.Forms.Button();
             this.btnLectures = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -130,15 +130,15 @@
             this.btnTimetables.Text = "Timetables";
             this.btnTimetables.UseVisualStyleBackColor = true;
             // 
-            // btnModules
+            // btnAcademic
             // 
-            this.btnModules.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(379, 133);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(299, 76);
-            this.btnModules.TabIndex = 20;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
+            this.btnAcademic.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcademic.Location = new System.Drawing.Point(379, 133);
+            this.btnAcademic.Name = "btnAcademic";
+            this.btnAcademic.Size = new System.Drawing.Size(299, 76);
+            this.btnAcademic.TabIndex = 20;
+            this.btnAcademic.Text = "Academic";
+            this.btnAcademic.UseVisualStyleBackColor = true;
             // 
             // btnLectures
             // 
@@ -165,7 +165,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnStufeed);
             this.Controls.Add(this.btnTimetables);
-            this.Controls.Add(this.btnModules);
+            this.Controls.Add(this.btnAcademic);
             this.Controls.Add(this.btnLectures);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BusMenu";
@@ -187,7 +187,7 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnStufeed;
         private System.Windows.Forms.Button btnTimetables;
-        private System.Windows.Forms.Button btnModules;
+        private System.Windows.Forms.Button btnAcademic;
         private System.Windows.Forms.Button btnLectures;
     }
 }

@@ -31,7 +31,9 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnLecstu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnModules = new System.Windows.Forms.Button();
+            this.btnFeedbacks = new System.Windows.Forms.Button();
+            this.btnTimetables = new System.Windows.Forms.Button();
+            this.btnAcademic = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,8 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnStusearch = new System.Windows.Forms.Button();
-            this.btnTimetables = new System.Windows.Forms.Button();
-            this.btnFeedbacks = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -87,21 +87,41 @@
             this.panel1.Controls.Add(this.btnTimetables);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnLecstu);
-            this.panel1.Controls.Add(this.btnModules);
+            this.panel1.Controls.Add(this.btnAcademic);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1352, 37);
             this.panel1.TabIndex = 113;
             // 
-            // btnModules
+            // btnFeedbacks
             // 
-            this.btnModules.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(107, 3);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(96, 31);
-            this.btnModules.TabIndex = 1;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
+            this.btnFeedbacks.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeedbacks.Location = new System.Drawing.Point(311, 3);
+            this.btnFeedbacks.Name = "btnFeedbacks";
+            this.btnFeedbacks.Size = new System.Drawing.Size(96, 31);
+            this.btnFeedbacks.TabIndex = 6;
+            this.btnFeedbacks.Text = "Feedbacks";
+            this.btnFeedbacks.UseVisualStyleBackColor = true;
+            // 
+            // btnTimetables
+            // 
+            this.btnTimetables.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimetables.Location = new System.Drawing.Point(209, 3);
+            this.btnTimetables.Name = "btnTimetables";
+            this.btnTimetables.Size = new System.Drawing.Size(96, 31);
+            this.btnTimetables.TabIndex = 5;
+            this.btnTimetables.Text = "Timetables";
+            this.btnTimetables.UseVisualStyleBackColor = true;
+            // 
+            // btnAcademic
+            // 
+            this.btnAcademic.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcademic.Location = new System.Drawing.Point(107, 3);
+            this.btnAcademic.Name = "btnAcademic";
+            this.btnAcademic.Size = new System.Drawing.Size(96, 31);
+            this.btnAcademic.TabIndex = 1;
+            this.btnAcademic.Text = "Academic";
+            this.btnAcademic.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -238,26 +258,6 @@
             this.btnStusearch.UseVisualStyleBackColor = true;
             this.btnStusearch.Click += new System.EventHandler(this.btnStusearch_Click);
             // 
-            // btnTimetables
-            // 
-            this.btnTimetables.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimetables.Location = new System.Drawing.Point(209, 3);
-            this.btnTimetables.Name = "btnTimetables";
-            this.btnTimetables.Size = new System.Drawing.Size(96, 31);
-            this.btnTimetables.TabIndex = 5;
-            this.btnTimetables.Text = "Timetables";
-            this.btnTimetables.UseVisualStyleBackColor = true;
-            // 
-            // btnFeedbacks
-            // 
-            this.btnFeedbacks.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeedbacks.Location = new System.Drawing.Point(311, 3);
-            this.btnFeedbacks.Name = "btnFeedbacks";
-            this.btnFeedbacks.Size = new System.Drawing.Size(96, 31);
-            this.btnFeedbacks.TabIndex = 6;
-            this.btnFeedbacks.Text = "Feedbacks";
-            this.btnFeedbacks.UseVisualStyleBackColor = true;
-            // 
             // Comlecstu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,7 +289,7 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnLecstu;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnModules;
+        private System.Windows.Forms.Button btnAcademic;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;

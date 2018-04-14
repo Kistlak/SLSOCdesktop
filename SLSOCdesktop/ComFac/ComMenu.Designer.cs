@@ -37,7 +37,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnFeed = new System.Windows.Forms.Button();
             this.btnTimetables = new System.Windows.Forms.Button();
-            this.btnModules = new System.Windows.Forms.Button();
+            this.btnAcademic = new System.Windows.Forms.Button();
             this.btnLecstu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -130,15 +130,15 @@
             this.btnTimetables.Text = "Timetables";
             this.btnTimetables.UseVisualStyleBackColor = true;
             // 
-            // btnModules
+            // btnAcademic
             // 
-            this.btnModules.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModules.Location = new System.Drawing.Point(376, 133);
-            this.btnModules.Name = "btnModules";
-            this.btnModules.Size = new System.Drawing.Size(299, 76);
-            this.btnModules.TabIndex = 31;
-            this.btnModules.Text = "Modules";
-            this.btnModules.UseVisualStyleBackColor = true;
+            this.btnAcademic.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcademic.Location = new System.Drawing.Point(376, 133);
+            this.btnAcademic.Name = "btnAcademic";
+            this.btnAcademic.Size = new System.Drawing.Size(299, 76);
+            this.btnAcademic.TabIndex = 31;
+            this.btnAcademic.Text = "Academic";
+            this.btnAcademic.UseVisualStyleBackColor = true;
             // 
             // btnLecstu
             // 
@@ -165,7 +165,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnFeed);
             this.Controls.Add(this.btnTimetables);
-            this.Controls.Add(this.btnModules);
+            this.Controls.Add(this.btnAcademic);
             this.Controls.Add(this.btnLecstu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ComMenu";
@@ -187,7 +187,7 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnFeed;
         private System.Windows.Forms.Button btnTimetables;
-        private System.Windows.Forms.Button btnModules;
+        private System.Windows.Forms.Button btnAcademic;
         private System.Windows.Forms.Button btnLecstu;
     }
 }
