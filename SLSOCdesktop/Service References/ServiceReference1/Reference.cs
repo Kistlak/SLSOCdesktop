@@ -854,10 +854,5 @@ namespace SLSOCdesktop.ServiceReference1 {
         public System.Threading.Tasks.Task<int> DeleteStudentsAsync(SLSOCdesktop.ServiceReference1.Studentsc sdel) {
             return base.Channel.DeleteStudentsAsync(sdel);
         }
-
-        internal int SaveLecturers(Studentsc sdc)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

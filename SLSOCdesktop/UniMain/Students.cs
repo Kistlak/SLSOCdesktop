@@ -85,7 +85,7 @@ namespace SLSOCdesktop.UniMain
             {
                 us.Username = txtUsername.Text;
                 us.Fname = txtFname.Text;
-                //us.Lname = txtLname.Text;
+                us.Lname = txtLname.Text;
                 //us.Adone = txtAdone.Text;
                 //us.Adtwo = txtAddtwo.Text;
                 //us.City = txtCity.Text;

@@ -84,6 +84,7 @@ namespace SLSOCdesktop.UniMain
             {
                 ul.Username = txtUsername.Text;
                 ul.Fname = txtFname.Text;
+                ul.Lname = txtLname.Text;
             };
 
             Service1Client service = new Service1Client();
