@@ -71,12 +71,6 @@ namespace SLSOCdesktop.ComFac
             cmbLecname.DataSource = dt;
 
             con.Close();
-
-            //List<Lecturersc> modl = new List<Lecturersc>();
-            //Service1Client service = new Service1Client();
-
-            //cmbLecname.DataSource = service.GetComputingLecs();
-
         }
 
     }
