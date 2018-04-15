@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnStusearch = new System.Windows.Forms.Button();
@@ -54,7 +55,26 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLecname = new System.Windows.Forms.ComboBox();
+            this.slsocDataSet = new SLSOCdesktop.slsocDataSet();
+            this.lecturersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lecturersTableAdapter = new SLSOCdesktop.slsocDataSetTableAdapters.lecturersTableAdapter();
+            this.slsocDataSet2 = new SLSOCdesktop.slsocDataSet2();
+            this.lecturersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lecturersTableAdapter1 = new SLSOCdesktop.slsocDataSet2TableAdapters.lecturersTableAdapter();
+            this.slsocDataSet3 = new SLSOCdesktop.slsocDataSet3();
+            this.modulesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.modulesTableAdapter = new SLSOCdesktop.slsocDataSet3TableAdapters.modulesTableAdapter();
+            this.slsocDataSet4 = new SLSOCdesktop.slsocDataSet4();
+            this.lecturersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.lecturersTableAdapter2 = new SLSOCdesktop.slsocDataSet4TableAdapters.lecturersTableAdapter();
+            this.slsocDataSet5 = new SLSOCdesktop.slsocDataSet5();
+            this.lecturersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.lecturersTableAdapter3 = new SLSOCdesktop.slsocDataSet5TableAdapters.lecturersTableAdapter();
+            this.lecnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -62,6 +82,16 @@
             this.tabControl1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modulesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -117,15 +147,22 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 138);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.modcodeDataGridViewTextBoxColumn,
+            this.modnameDataGridViewTextBoxColumn,
+            this.lecnameDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.modulesBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(198, 152);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1315, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(1083, 473);
             this.dataGridView1.TabIndex = 141;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.cmbLecname);
             this.tabPage1.Controls.Add(this.btnUpdate);
             this.tabPage1.Controls.Add(this.btnDelete);
             this.tabPage1.Controls.Add(this.btnAdd);
@@ -318,6 +355,7 @@
             this.btnAdd.TabIndex = 150;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -341,14 +379,116 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbLecname
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(198, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(431, 31);
-            this.comboBox1.TabIndex = 153;
+            this.cmbLecname.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.lecturersBindingSource, "fname", true));
+            this.cmbLecname.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.lecturersBindingSource, "fname", true));
+            this.cmbLecname.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.lecturersBindingSource, "fname", true));
+            this.cmbLecname.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lecturersBindingSource, "fname", true));
+            this.cmbLecname.DataSource = this.lecturersBindingSource1;
+            this.cmbLecname.DisplayMember = "fname";
+            this.cmbLecname.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLecname.FormattingEnabled = true;
+            this.cmbLecname.Location = new System.Drawing.Point(198, 89);
+            this.cmbLecname.Name = "cmbLecname";
+            this.cmbLecname.Size = new System.Drawing.Size(431, 31);
+            this.cmbLecname.TabIndex = 153;
+            this.cmbLecname.ValueMember = "fname";
+            // 
+            // slsocDataSet
+            // 
+            this.slsocDataSet.DataSetName = "slsocDataSet";
+            this.slsocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lecturersBindingSource
+            // 
+            this.lecturersBindingSource.DataMember = "lecturers";
+            this.lecturersBindingSource.DataSource = this.slsocDataSet;
+            // 
+            // lecturersTableAdapter
+            // 
+            this.lecturersTableAdapter.ClearBeforeFill = true;
+            // 
+            // slsocDataSet2
+            // 
+            this.slsocDataSet2.DataSetName = "slsocDataSet2";
+            this.slsocDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lecturersBindingSource1
+            // 
+            this.lecturersBindingSource1.DataMember = "lecturers";
+            this.lecturersBindingSource1.DataSource = this.slsocDataSet2;
+            // 
+            // lecturersTableAdapter1
+            // 
+            this.lecturersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // slsocDataSet3
+            // 
+            this.slsocDataSet3.DataSetName = "slsocDataSet3";
+            this.slsocDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // modulesBindingSource
+            // 
+            this.modulesBindingSource.DataMember = "modules";
+            this.modulesBindingSource.DataSource = this.slsocDataSet3;
+            // 
+            // modulesTableAdapter
+            // 
+            this.modulesTableAdapter.ClearBeforeFill = true;
+            // 
+            // slsocDataSet4
+            // 
+            this.slsocDataSet4.DataSetName = "slsocDataSet4";
+            this.slsocDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lecturersBindingSource2
+            // 
+            this.lecturersBindingSource2.DataMember = "lecturers";
+            this.lecturersBindingSource2.DataSource = this.slsocDataSet4;
+            // 
+            // lecturersTableAdapter2
+            // 
+            this.lecturersTableAdapter2.ClearBeforeFill = true;
+            // 
+            // slsocDataSet5
+            // 
+            this.slsocDataSet5.DataSetName = "slsocDataSet5";
+            this.slsocDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lecturersBindingSource3
+            // 
+            this.lecturersBindingSource3.DataMember = "lecturers";
+            this.lecturersBindingSource3.DataSource = this.slsocDataSet5;
+            // 
+            // lecturersTableAdapter3
+            // 
+            this.lecturersTableAdapter3.ClearBeforeFill = true;
+            // 
+            // lecnameDataGridViewTextBoxColumn
+            // 
+            this.lecnameDataGridViewTextBoxColumn.DataPropertyName = "lecname";
+            this.lecnameDataGridViewTextBoxColumn.HeaderText = "lecname";
+            this.lecnameDataGridViewTextBoxColumn.Name = "lecnameDataGridViewTextBoxColumn";
+            // 
+            // modnameDataGridViewTextBoxColumn
+            // 
+            this.modnameDataGridViewTextBoxColumn.DataPropertyName = "modname";
+            this.modnameDataGridViewTextBoxColumn.HeaderText = "modname";
+            this.modnameDataGridViewTextBoxColumn.Name = "modnameDataGridViewTextBoxColumn";
+            // 
+            // modcodeDataGridViewTextBoxColumn
+            // 
+            this.modcodeDataGridViewTextBoxColumn.DataPropertyName = "modcode";
+            this.modcodeDataGridViewTextBoxColumn.HeaderText = "modcode";
+            this.modcodeDataGridViewTextBoxColumn.Name = "modcodeDataGridViewTextBoxColumn";
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ComAcademic
             // 
@@ -363,6 +503,7 @@
             this.Name = "ComAcademic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ComAcademic";
+            this.Load += new System.EventHandler(this.ComAcademic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -373,6 +514,16 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modulesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,6 +556,25 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLecname;
+        private slsocDataSet slsocDataSet;
+        private System.Windows.Forms.BindingSource lecturersBindingSource;
+        private slsocDataSetTableAdapters.lecturersTableAdapter lecturersTableAdapter;
+        private slsocDataSet2 slsocDataSet2;
+        private System.Windows.Forms.BindingSource lecturersBindingSource1;
+        private slsocDataSet2TableAdapters.lecturersTableAdapter lecturersTableAdapter1;
+        private slsocDataSet3 slsocDataSet3;
+        private System.Windows.Forms.BindingSource modulesBindingSource;
+        private slsocDataSet3TableAdapters.modulesTableAdapter modulesTableAdapter;
+        private slsocDataSet4 slsocDataSet4;
+        private System.Windows.Forms.BindingSource lecturersBindingSource2;
+        private slsocDataSet4TableAdapters.lecturersTableAdapter lecturersTableAdapter2;
+        private slsocDataSet5 slsocDataSet5;
+        private System.Windows.Forms.BindingSource lecturersBindingSource3;
+        private slsocDataSet5TableAdapters.lecturersTableAdapter lecturersTableAdapter3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modcodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecnameDataGridViewTextBoxColumn;
     }
 }

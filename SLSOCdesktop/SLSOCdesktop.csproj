@@ -91,6 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="slsocDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +105,26 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>slsocDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="UniMain\Lecturers.cs">
       <SubType>Form</SubType>
@@ -184,6 +209,16 @@
     <None Include="Service References\ServiceReference1\SLSOCserver.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference2\service.wsdl" />
+    <None Include="Service References\ServiceReference2\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\SLSOCserver.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="slsocDataSet.xsc">
       <DependentUpon>slsocDataSet.xsd</DependentUpon>
     </None>
@@ -206,6 +241,50 @@
     <None Include="slsocDataSet1.xss">
       <DependentUpon>slsocDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="slsocDataSet2.xsc">
+      <DependentUpon>slsocDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet2.xss">
+      <DependentUpon>slsocDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet3.xsc">
+      <DependentUpon>slsocDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet3.xss">
+      <DependentUpon>slsocDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet4.xsc">
+      <DependentUpon>slsocDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet4.xss">
+      <DependentUpon>slsocDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet5.xsc">
+      <DependentUpon>slsocDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet5.xss">
+      <DependentUpon>slsocDataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -218,6 +297,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
@@ -231,7 +311,18 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

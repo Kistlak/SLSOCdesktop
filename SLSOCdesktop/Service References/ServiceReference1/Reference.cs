@@ -734,6 +734,18 @@ namespace SLSOCdesktop.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComputingStudents", ReplyAction="http://tempuri.org/IService1/GetComputingStudentsResponse")]
         System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc[]> GetComputingStudentsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchLecsForm", ReplyAction="http://tempuri.org/IService1/SearchLecsFormResponse")]
+        SLSOCdesktop.ServiceReference1.Lecturersc SearchLecsForm(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchLecsForm", ReplyAction="http://tempuri.org/IService1/SearchLecsFormResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Lecturersc> SearchLecsFormAsync(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchStuForm", ReplyAction="http://tempuri.org/IService1/SearchStuFormResponse")]
+        SLSOCdesktop.ServiceReference1.Studentsc SearchStuForm(string Username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchStuForm", ReplyAction="http://tempuri.org/IService1/SearchStuFormResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc> SearchStuFormAsync(string Username);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -881,6 +893,22 @@ namespace SLSOCdesktop.ServiceReference1 {
         
         public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc[]> GetComputingStudentsAsync() {
             return base.Channel.GetComputingStudentsAsync();
+        }
+        
+        public SLSOCdesktop.ServiceReference1.Lecturersc SearchLecsForm(string Username) {
+            return base.Channel.SearchLecsForm(Username);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Lecturersc> SearchLecsFormAsync(string Username) {
+            return base.Channel.SearchLecsFormAsync(Username);
+        }
+        
+        public SLSOCdesktop.ServiceReference1.Studentsc SearchStuForm(string Username) {
+            return base.Channel.SearchStuForm(Username);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc> SearchStuFormAsync(string Username) {
+            return base.Channel.SearchStuFormAsync(Username);
         }
     }
 }

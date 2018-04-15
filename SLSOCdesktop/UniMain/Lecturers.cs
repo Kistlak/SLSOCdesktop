@@ -33,7 +33,7 @@ namespace SLSOCdesktop.UniMain
             ldc.Moduletwo = txtModtwo.Text;
             ldc.Modulethree = txtModthree.Text;
             ldc.Jdate = dateTimePicker1.Value.ToString();
-            ldc.Rdate = dateTimePicker2.Value.ToString();
+            ldc.Rdate = dateTimePicker2.Text;
             ldc.Username = txtUsername.Text;
             ldc.Password = txtPassword.Text;
 
@@ -67,15 +67,32 @@ namespace SLSOCdesktop.UniMain
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            List<Lecturersc> sl = new List<Lecturersc>();
-            Lecturersc t = new Lecturersc();
-            {
-                t.Username = txtUsername.Text;
-            };
+            Lecturersc u = new Lecturersc();
 
             Service1Client service = new Service1Client();
-            sl.Add(service.SearchLecturers(t));
-            dataGridView1.DataSource = sl;
+            u = service.SearchLecsForm(txtUsername.Text);
+            if (u != null)
+            {
+                txtFname.Text = u.Fname;
+                txtLname.Text = u.Lname;
+                txtAdone.Text = u.Adone;
+                txtAddtwo.Text = u.Adtwo;
+                txtCity.Text = u.City;
+                txtNum.Text = u.Number;
+                cmbFac.Text = u.Faculty;
+                txtModone.Text = u.Moduleone;
+                txtModtwo.Text = u.Moduletwo;
+                txtModthree.Text = u.Modulethree;
+                dateTimePicker1.Text = u.Jdate;
+                dateTimePicker2.Text = u.Rdate;
+                txtUsername.Text = u.Username;
+                txtPassword.Text = u.Password;
+            }
+
+            else
+            {
+                MessageBox.Show("Invalid Username !! Try Again !!");
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

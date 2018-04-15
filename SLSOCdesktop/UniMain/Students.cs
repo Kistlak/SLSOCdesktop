@@ -38,7 +38,7 @@ namespace SLSOCdesktop.UniMain
             sdc.Adtwo = txtAddtwo.Text;
             sdc.City = txtCity.Text;
             sdc.Number = txtNum.Text;
-            sdc.Byear = dateTimePicker2.Value.ToString();
+            sdc.Byear = dateTimePicker2.Text;
             sdc.Nic = txtNic.Text;
             sdc.Faculty = cmbFac.SelectedItem.ToString();
             sdc.Jdate = dateTimePicker1.Value.ToString();
@@ -68,15 +68,30 @@ namespace SLSOCdesktop.UniMain
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            List<Studentsc> stus = new List<Studentsc>();
-            Studentsc t = new Studentsc();
-            {
-                t.Username = txtUsername.Text;
-            };
+            Studentsc u = new Studentsc();
 
             Service1Client service = new Service1Client();
-            stus.Add(service.SearchStudents(t));
-            dataGridView1.DataSource = stus;
+            u = service.SearchStuForm(txtUsername.Text);
+            if (u != null)
+            {
+                txtFname.Text = u.Fname;
+                txtLname.Text = u.Lname;
+                txtAdone.Text = u.Adone;
+                txtAddtwo.Text = u.Adtwo;
+                txtCity.Text = u.City;
+                txtNum.Text = u.Number;
+                dateTimePicker2.Text = u.Byear;
+                txtNic.Text = u.Nic;
+                cmbFac.Text = u.Faculty;
+                dateTimePicker1.Text = u.Jdate;
+                txtUsername.Text = u.Username;
+                txtPassword.Text = u.Password;
+            }
+
+            else
+            {
+                MessageBox.Show("Invalid Username !! Try Again !!");
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
