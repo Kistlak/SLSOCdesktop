@@ -216,6 +216,9 @@
     <None Include="Service References\ServiceReference2\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Modulesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference2\SLSOCserver.xsd">
       <SubType>Designer</SubType>
     </None>

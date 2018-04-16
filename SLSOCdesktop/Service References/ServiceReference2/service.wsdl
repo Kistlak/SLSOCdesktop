@@ -13,16 +13,92 @@
   <wsdl:message name="IService2_AddModules_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddModulesResponse" />
   </wsdl:message>
+  <wsdl:message name="IService2_SearchModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchModules" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComModules" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComModules" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComModules" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComModulesResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService2">
     <wsdl:operation name="AddModules">
       <wsdl:input wsaw:Action="http://tempuri.org/IService2/AddModules" message="tns:IService2_AddModules_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService2/AddModulesResponse" message="tns:IService2_AddModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/SearchModules" message="tns:IService2_SearchModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/SearchModulesResponse" message="tns:IService2_SearchModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComModules" message="tns:IService2_GetComModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComModulesResponse" message="tns:IService2_GetComModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/UpdateComModules" message="tns:IService2_UpdateComModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/UpdateComModulesResponse" message="tns:IService2_UpdateComModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/DeleteComModules" message="tns:IService2_DeleteComModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/DeleteComModulesResponse" message="tns:IService2_DeleteComModules_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService2" type="tns:IService2">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="AddModules">
       <soap:operation soapAction="http://tempuri.org/IService2/AddModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchModules">
+      <soap:operation soapAction="http://tempuri.org/IService2/SearchModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComModules">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComModules">
+      <soap:operation soapAction="http://tempuri.org/IService2/UpdateComModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComModules">
+      <soap:operation soapAction="http://tempuri.org/IService2/DeleteComModules" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

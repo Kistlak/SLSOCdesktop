@@ -115,6 +115,30 @@ namespace SLSOCdesktop.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddModules", ReplyAction="http://tempuri.org/IService2/AddModulesResponse")]
         System.Threading.Tasks.Task<int> AddModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc md);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchModules", ReplyAction="http://tempuri.org/IService2/SearchModulesResponse")]
+        SLSOCdesktop.ServiceReference2.Modulesc SearchModules(string Modcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchModules", ReplyAction="http://tempuri.org/IService2/SearchModulesResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Modulesc> SearchModulesAsync(string Modcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComModules", ReplyAction="http://tempuri.org/IService2/GetComModulesResponse")]
+        SLSOCdesktop.ServiceReference2.Modulesc[] GetComModules();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComModules", ReplyAction="http://tempuri.org/IService2/GetComModulesResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Modulesc[]> GetComModulesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComModules", ReplyAction="http://tempuri.org/IService2/UpdateComModulesResponse")]
+        int UpdateComModules(SLSOCdesktop.ServiceReference2.Modulesc cmu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComModules", ReplyAction="http://tempuri.org/IService2/UpdateComModulesResponse")]
+        System.Threading.Tasks.Task<int> UpdateComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComModules", ReplyAction="http://tempuri.org/IService2/DeleteComModulesResponse")]
+        int DeleteComModules(SLSOCdesktop.ServiceReference2.Modulesc cmdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComModules", ReplyAction="http://tempuri.org/IService2/DeleteComModulesResponse")]
+        System.Threading.Tasks.Task<int> DeleteComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmdel);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -150,6 +174,38 @@ namespace SLSOCdesktop.ServiceReference2 {
         
         public System.Threading.Tasks.Task<int> AddModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc md) {
             return base.Channel.AddModulesAsync(md);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Modulesc SearchModules(string Modcode) {
+            return base.Channel.SearchModules(Modcode);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Modulesc> SearchModulesAsync(string Modcode) {
+            return base.Channel.SearchModulesAsync(Modcode);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Modulesc[] GetComModules() {
+            return base.Channel.GetComModules();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Modulesc[]> GetComModulesAsync() {
+            return base.Channel.GetComModulesAsync();
+        }
+        
+        public int UpdateComModules(SLSOCdesktop.ServiceReference2.Modulesc cmu) {
+            return base.Channel.UpdateComModules(cmu);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmu) {
+            return base.Channel.UpdateComModulesAsync(cmu);
+        }
+        
+        public int DeleteComModules(SLSOCdesktop.ServiceReference2.Modulesc cmdel) {
+            return base.Channel.DeleteComModules(cmdel);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmdel) {
+            return base.Channel.DeleteComModulesAsync(cmdel);
         }
     }
 }

@@ -48,7 +48,7 @@ namespace SLSOCdesktop.ComFac
             if (service.AddModules(mdc) == 1)
             {
                 MessageBox.Show("Successfully Saved");
-                //TableLoad();
+                TableLoad();
             }
             else
             {
@@ -73,5 +73,71 @@ namespace SLSOCdesktop.ComFac
             con.Close();
         }
 
+        void TableLoad()
+        {
+            List<Modulesc> modl = new List<Modulesc>();
+            Service2Client service = new Service2Client();
+
+            dataGridView1.DataSource = service.GetComModules();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Modulesc u = new Modulesc();
+
+            Service2Client service = new Service2Client();
+            u = service.SearchModules(txtModcode.Text);
+            if (u != null)
+            {
+                txtModcode.Text = u.Modcode;
+                txtModname.Text = u.Modname;
+                cmbLecname.Text = u.Lecname;
+            }
+
+            else
+            {
+                MessageBox.Show("Invalid Mode Code !! Try Again !!");
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Modulesc ucm = new Modulesc();
+            {
+                ucm.Modcode = txtModcode.Text;
+                ucm.Modname = txtModname.Text;
+                ucm.Lecname = cmbLecname.Text;
+            };
+
+            Service2Client service = new Service2Client();
+            if (service.UpdateComModules(ucm) == 1)
+            {
+                MessageBox.Show("Successfully Updated");
+                TableLoad();
+            }
+            else
+            {
+                MessageBox.Show("Error.. Please Try Again");
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Modulesc dcm = new Modulesc();
+            {
+                dcm.Modcode = txtModcode.Text;
+            };
+
+            Service2Client service = new Service2Client();
+            if (service.DeleteComModules(dcm) == 1)
+            {
+                MessageBox.Show("Successfully Deleted");
+                TableLoad();
+            }
+            else
+            {
+                MessageBox.Show("Error.. Please Try Again");
+            }
+        }
     }
 }

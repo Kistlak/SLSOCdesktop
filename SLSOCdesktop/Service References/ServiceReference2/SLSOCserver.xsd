@@ -9,4 +9,10 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Modulesc" nillable="true" type="tns:Modulesc" />
+  <xs:complexType name="ArrayOfModulesc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Modulesc" nillable="true" type="tns:Modulesc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModulesc" nillable="true" type="tns:ArrayOfModulesc" />
 </xs:schema>
