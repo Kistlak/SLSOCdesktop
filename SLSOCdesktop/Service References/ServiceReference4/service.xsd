@@ -283,4 +283,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetEngFeedbacks">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEngFeedbacksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="GetEngFeedbacksResult" nillable="true" type="q24:ArrayOfFeedbacksc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

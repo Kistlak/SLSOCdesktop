@@ -336,6 +336,9 @@
     <None Include="Service References\ServiceReference2\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Feedbacksc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Labsc.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -364,6 +367,9 @@
     <None Include="Service References\ServiceReference3\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Feedbacksc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Labsc.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -391,6 +397,9 @@
     </None>
     <None Include="Service References\ServiceReference4\service1.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Feedbacksc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Labsc.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

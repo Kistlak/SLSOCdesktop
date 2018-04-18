@@ -133,6 +133,12 @@
   <wsdl:message name="IService3_SearchStudents_OutputMessage">
     <wsdl:part name="parameters" element="tns:SearchStudentsResponse" />
   </wsdl:message>
+  <wsdl:message name="IService3_GetBusFeedbacks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBusFeedbacks" />
+  </wsdl:message>
+  <wsdl:message name="IService3_GetBusFeedbacks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBusFeedbacksResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService3">
     <wsdl:operation name="AddModules">
       <wsdl:input wsaw:Action="http://tempuri.org/IService3/AddModules" message="tns:IService3_AddModules_InputMessage" />
@@ -217,6 +223,10 @@
     <wsdl:operation name="SearchStudents">
       <wsdl:input wsaw:Action="http://tempuri.org/IService3/SearchStudents" message="tns:IService3_SearchStudents_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService3/SearchStudentsResponse" message="tns:IService3_SearchStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBusFeedbacks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService3/GetBusFeedbacks" message="tns:IService3_GetBusFeedbacks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService3/GetBusFeedbacksResponse" message="tns:IService3_GetBusFeedbacks_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService3" type="tns:IService3">
@@ -403,6 +413,15 @@
     </wsdl:operation>
     <wsdl:operation name="SearchStudents">
       <soap:operation soapAction="http://tempuri.org/IService3/SearchStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusFeedbacks">
+      <soap:operation soapAction="http://tempuri.org/IService3/GetBusFeedbacks" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

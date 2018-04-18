@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SLSOCdesktop.ServiceReference4;
 
 namespace SLSOCdesktop.EngFac
 {
@@ -15,11 +16,20 @@ namespace SLSOCdesktop.EngFac
         public EngFeedbacks()
         {
             InitializeComponent();
+            TableLoad();
         }
 
         private void btnFeedbacks_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Now you are in Feedback panel");
+        }
+
+        void TableLoad()
+        {
+            List<Feedbacksc> modl = new List<Feedbacksc>();
+            Service4Client service = new Service4Client();
+
+            dataGridView1.DataSource = service.GetEngFeedbacks();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

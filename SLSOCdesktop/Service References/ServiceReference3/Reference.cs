@@ -923,6 +923,115 @@ namespace SLSOCdesktop.ServiceReference3 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Feedbacksc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Feedbacksc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FacultyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FeedbackField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Faculty {
+            get {
+                return this.FacultyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FacultyField, value) != true)) {
+                    this.FacultyField = value;
+                    this.RaisePropertyChanged("Faculty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Feedback {
+            get {
+                return this.FeedbackField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FeedbackField, value) != true)) {
+                    this.FeedbackField = value;
+                    this.RaisePropertyChanged("Feedback");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Modcode {
+            get {
+                return this.ModcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModcodeField, value) != true)) {
+                    this.ModcodeField = value;
+                    this.RaisePropertyChanged("Modcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference3.IService3")]
     public interface IService3 {
@@ -1052,6 +1161,12 @@ namespace SLSOCdesktop.ServiceReference3 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService3/SearchStudents", ReplyAction="http://tempuri.org/IService3/SearchStudentsResponse")]
         System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference3.Studentsc> SearchStudentsAsync(SLSOCdesktop.ServiceReference3.Studentsc ss);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService3/GetBusFeedbacks", ReplyAction="http://tempuri.org/IService3/GetBusFeedbacksResponse")]
+        SLSOCdesktop.ServiceReference3.Feedbacksc[] GetBusFeedbacks();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService3/GetBusFeedbacks", ReplyAction="http://tempuri.org/IService3/GetBusFeedbacksResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference3.Feedbacksc[]> GetBusFeedbacksAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1247,6 +1362,14 @@ namespace SLSOCdesktop.ServiceReference3 {
         
         public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference3.Studentsc> SearchStudentsAsync(SLSOCdesktop.ServiceReference3.Studentsc ss) {
             return base.Channel.SearchStudentsAsync(ss);
+        }
+        
+        public SLSOCdesktop.ServiceReference3.Feedbacksc[] GetBusFeedbacks() {
+            return base.Channel.GetBusFeedbacks();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference3.Feedbacksc[]> GetBusFeedbacksAsync() {
+            return base.Channel.GetBusFeedbacksAsync();
         }
     }
 }

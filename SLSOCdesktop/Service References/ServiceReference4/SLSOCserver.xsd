@@ -112,4 +112,20 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Studentsc" nillable="true" type="tns:Studentsc" />
+  <xs:complexType name="ArrayOfFeedbacksc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Feedbacksc" nillable="true" type="tns:Feedbacksc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeedbacksc" nillable="true" type="tns:ArrayOfFeedbacksc" />
+  <xs:complexType name="Feedbacksc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Faculty" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Feedback" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Modcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Feedbacksc" nillable="true" type="tns:Feedbacksc" />
 </xs:schema>

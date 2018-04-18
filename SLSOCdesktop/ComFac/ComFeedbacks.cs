@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SLSOCdesktop.ServiceReference2;
 
 namespace SLSOCdesktop.ComFac
 {
@@ -15,11 +16,20 @@ namespace SLSOCdesktop.ComFac
         public ComFeedbacks()
         {
             InitializeComponent();
+            TableLoad();
         }
 
         private void btnFeedbacks_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Now you are in Feedbacks panel");
+        }
+
+        void TableLoad()
+        {
+            List<Feedbacksc> modl = new List<Feedbacksc>();
+            Service2Client service = new Service2Client();
+
+            dataGridView1.DataSource = service.GetComFeedbacks();
         }
 
         private void btnLecstu_Click(object sender, EventArgs e)
