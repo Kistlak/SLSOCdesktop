@@ -401,7 +401,7 @@
             this.cmbFac.Items.AddRange(new object[] {
             "Computing",
             "Business",
-            "Engneering"});
+            "Engineering"});
             this.cmbFac.Location = new System.Drawing.Point(206, 246);
             this.cmbFac.Name = "cmbFac";
             this.cmbFac.Size = new System.Drawing.Size(431, 29);

@@ -85,18 +85,6 @@
   <wsdl:message name="IService1_DeleteStudents_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteStudentsResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_GetComputingLecturers_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetComputingLecturers" />
-  </wsdl:message>
-  <wsdl:message name="IService1_GetComputingLecturers_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetComputingLecturersResponse" />
-  </wsdl:message>
-  <wsdl:message name="IService1_GetComputingStudents_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetComputingStudents" />
-  </wsdl:message>
-  <wsdl:message name="IService1_GetComputingStudents_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetComputingStudentsResponse" />
-  </wsdl:message>
   <wsdl:message name="IService1_SearchLecsForm_InputMessage">
     <wsdl:part name="parameters" element="tns:SearchLecsForm" />
   </wsdl:message>
@@ -161,14 +149,6 @@
     <wsdl:operation name="DeleteStudents">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteStudents" message="tns:IService1_DeleteStudents_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteStudentsResponse" message="tns:IService1_DeleteStudents_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="GetComputingLecturers">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetComputingLecturers" message="tns:IService1_GetComputingLecturers_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetComputingLecturersResponse" message="tns:IService1_GetComputingLecturers_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="GetComputingStudents">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetComputingStudents" message="tns:IService1_GetComputingStudents_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetComputingStudentsResponse" message="tns:IService1_GetComputingStudents_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SearchLecsForm">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchLecsForm" message="tns:IService1_SearchLecsForm_InputMessage" />
@@ -291,24 +271,6 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteStudents">
       <soap:operation soapAction="http://tempuri.org/IService1/DeleteStudents" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetComputingLecturers">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetComputingLecturers" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetComputingStudents">
-      <soap:operation soapAction="http://tempuri.org/IService1/GetComputingStudents" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

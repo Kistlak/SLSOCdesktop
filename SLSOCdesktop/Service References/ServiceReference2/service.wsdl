@@ -37,6 +37,102 @@
   <wsdl:message name="IService2_DeleteComModules_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteComModulesResponse" />
   </wsdl:message>
+  <wsdl:message name="IService2_AddLecHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLecHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService2_AddLecHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLecHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLecHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLecHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLecHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLecHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComLecHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComLecHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComLecHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComLecHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComlecHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComlecHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComlecHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComlecHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComLecHalls_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComLecHalls" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComLecHalls_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComLecHallsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_AddLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService2_AddLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService2_UpdateComLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateComLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComLabs_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComLabs" />
+  </wsdl:message>
+  <wsdl:message name="IService2_DeleteComLabs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComLabsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_AddTimetables_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTimetables" />
+  </wsdl:message>
+  <wsdl:message name="IService2_AddTimetables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTimetablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComTimetables_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComTimetables" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComTimetables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComTimetablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComputingLecturers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputingLecturers" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComputingLecturers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputingLecturersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComputingStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputingStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService2_GetComputingStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComputingStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLecturers_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLecturers" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchLecturers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLecturersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchStudents" />
+  </wsdl:message>
+  <wsdl:message name="IService2_SearchStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchStudentsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService2">
     <wsdl:operation name="AddModules">
       <wsdl:input wsaw:Action="http://tempuri.org/IService2/AddModules" message="tns:IService2_AddModules_InputMessage" />
@@ -57,6 +153,70 @@
     <wsdl:operation name="DeleteComModules">
       <wsdl:input wsaw:Action="http://tempuri.org/IService2/DeleteComModules" message="tns:IService2_DeleteComModules_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService2/DeleteComModulesResponse" message="tns:IService2_DeleteComModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLecHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/AddLecHalls" message="tns:IService2_AddLecHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/AddLecHallsResponse" message="tns:IService2_AddLecHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLecHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/SearchLecHalls" message="tns:IService2_SearchLecHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/SearchLecHallsResponse" message="tns:IService2_SearchLecHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComLecHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComLecHalls" message="tns:IService2_GetComLecHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComLecHallsResponse" message="tns:IService2_GetComLecHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComlecHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/UpdateComlecHalls" message="tns:IService2_UpdateComlecHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/UpdateComlecHallsResponse" message="tns:IService2_UpdateComlecHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComLecHalls">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/DeleteComLecHalls" message="tns:IService2_DeleteComLecHalls_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/DeleteComLecHallsResponse" message="tns:IService2_DeleteComLecHalls_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/AddLabs" message="tns:IService2_AddLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/AddLabsResponse" message="tns:IService2_AddLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/SearchLabs" message="tns:IService2_SearchLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/SearchLabsResponse" message="tns:IService2_SearchLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComLabs" message="tns:IService2_GetComLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComLabsResponse" message="tns:IService2_GetComLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/UpdateComLabs" message="tns:IService2_UpdateComLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/UpdateComLabsResponse" message="tns:IService2_UpdateComLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComLabs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/DeleteComLabs" message="tns:IService2_DeleteComLabs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/DeleteComLabsResponse" message="tns:IService2_DeleteComLabs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTimetables">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/AddTimetables" message="tns:IService2_AddTimetables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/AddTimetablesResponse" message="tns:IService2_AddTimetables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComTimetables">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComTimetables" message="tns:IService2_GetComTimetables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComTimetablesResponse" message="tns:IService2_GetComTimetables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComputingLecturers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComputingLecturers" message="tns:IService2_GetComputingLecturers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComputingLecturersResponse" message="tns:IService2_GetComputingLecturers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComputingStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/GetComputingStudents" message="tns:IService2_GetComputingStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/GetComputingStudentsResponse" message="tns:IService2_GetComputingStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLecturers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/SearchLecturers" message="tns:IService2_SearchLecturers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/SearchLecturersResponse" message="tns:IService2_SearchLecturers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/SearchStudents" message="tns:IService2_SearchStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/SearchStudentsResponse" message="tns:IService2_SearchStudents_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService2" type="tns:IService2">
@@ -99,6 +259,150 @@
     </wsdl:operation>
     <wsdl:operation name="DeleteComModules">
       <soap:operation soapAction="http://tempuri.org/IService2/DeleteComModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLecHalls">
+      <soap:operation soapAction="http://tempuri.org/IService2/AddLecHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLecHalls">
+      <soap:operation soapAction="http://tempuri.org/IService2/SearchLecHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComLecHalls">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComLecHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComlecHalls">
+      <soap:operation soapAction="http://tempuri.org/IService2/UpdateComlecHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComLecHalls">
+      <soap:operation soapAction="http://tempuri.org/IService2/DeleteComLecHalls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLabs">
+      <soap:operation soapAction="http://tempuri.org/IService2/AddLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLabs">
+      <soap:operation soapAction="http://tempuri.org/IService2/SearchLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComLabs">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateComLabs">
+      <soap:operation soapAction="http://tempuri.org/IService2/UpdateComLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComLabs">
+      <soap:operation soapAction="http://tempuri.org/IService2/DeleteComLabs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTimetables">
+      <soap:operation soapAction="http://tempuri.org/IService2/AddTimetables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComTimetables">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComTimetables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComputingLecturers">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComputingLecturers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetComputingStudents">
+      <soap:operation soapAction="http://tempuri.org/IService2/GetComputingStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLecturers">
+      <soap:operation soapAction="http://tempuri.org/IService2/SearchLecturers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchStudents">
+      <soap:operation soapAction="http://tempuri.org/IService2/SearchStudents" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

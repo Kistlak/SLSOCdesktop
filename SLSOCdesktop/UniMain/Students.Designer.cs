@@ -48,7 +48,6 @@
             this.slsocDataSet1 = new SLSOCdesktop.slsocDataSet1();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -80,6 +79,7 @@
             this.txtNic = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.studentsTableAdapter = new SLSOCdesktop.slsocDataSet1TableAdapters.studentsTableAdapter();
+            this.cmbBatch = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet1)).BeginInit();
@@ -242,27 +242,15 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = " ";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(875, 303);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(431, 32);
-            this.dateTimePicker1.TabIndex = 100;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 4, 13, 15, 29, 51, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(703, 310);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 23);
+            this.label14.Size = new System.Drawing.Size(69, 23);
             this.label14.TabIndex = 99;
-            this.label14.Text = "Joined Date :";
+            this.label14.Text = "Batch :";
             // 
             // label13
             // 
@@ -552,11 +540,27 @@
             // 
             this.studentsTableAdapter.ClearBeforeFill = true;
             // 
+            // cmbBatch
+            // 
+            this.cmbBatch.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBatch.FormattingEnabled = true;
+            this.cmbBatch.Items.AddRange(new object[] {
+            "Batch 1",
+            "Batch 2",
+            "Batch 3",
+            "Batch 4",
+            "Batch 5"});
+            this.cmbBatch.Location = new System.Drawing.Point(875, 308);
+            this.cmbBatch.Name = "cmbBatch";
+            this.cmbBatch.Size = new System.Drawing.Size(431, 29);
+            this.cmbBatch.TabIndex = 113;
+            // 
             // Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1352, 696);
+            this.Controls.Add(this.cmbBatch);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.txtNic);
             this.Controls.Add(this.btnDelete);
@@ -564,7 +568,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtUsername);
@@ -613,7 +616,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtUsername;
@@ -659,5 +661,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn facDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn jdateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cmbBatch;
     }
 }

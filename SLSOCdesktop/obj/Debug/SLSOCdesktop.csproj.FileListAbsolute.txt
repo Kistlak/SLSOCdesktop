@@ -15,3 +15,13 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\ob
 C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.UniMain.Students.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.ComFac.Comlecstu.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.ComFac.ComAcademic.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.ComFac.ComTimetable.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.ComFac.ComFeedbacks.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.BusFac.BusAcademic.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.BusFac.BusFeedback.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.BusFac.BusLecstu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.BusFac.BusTimetable.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.EngFac.EngAcademic.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.EngFac.EngFeedbacks.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.EngFac.EngLecstu.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\SLSOCdesktop\SLSOCdesktop\obj\Debug\SLSOCdesktop.EngFac.EngTimetable.resources

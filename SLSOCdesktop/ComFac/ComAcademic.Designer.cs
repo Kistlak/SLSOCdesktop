@@ -30,10 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lechallcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numstuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lechallsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.slsocDataSet6 = new SLSOCdesktop.slsocDataSet6();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnStusearch = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLechallDelete = new System.Windows.Forms.Button();
+            this.btnLechallUpdate = new System.Windows.Forms.Button();
+            this.btnLechallAdd = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNumstu = new System.Windows.Forms.TextBox();
+            this.txtHcode = new System.Windows.Forms.TextBox();
+            this.btnLechallSearch = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +68,20 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtLabnumstu = new System.Windows.Forms.TextBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.slsocDataSet8 = new SLSOCdesktop.slsocDataSet8();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtLabcode = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.btnFeedbacks = new System.Windows.Forms.Button();
@@ -75,7 +99,14 @@
             this.slsocDataSet5 = new SLSOCdesktop.slsocDataSet5();
             this.lecturersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.lecturersTableAdapter3 = new SLSOCdesktop.slsocDataSet5TableAdapters.lecturersTableAdapter();
+            this.lechallsTableAdapter = new SLSOCdesktop.slsocDataSet6TableAdapters.lechallsTableAdapter();
+            this.slsocDataSet7 = new SLSOCdesktop.slsocDataSet7();
+            this.labsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labsTableAdapter = new SLSOCdesktop.slsocDataSet7TableAdapters.labsTableAdapter();
+            this.labsTableAdapter1 = new SLSOCdesktop.slsocDataSet8TableAdapters.labsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lechallsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet6)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modulesBindingSource)).BeginInit();
@@ -86,21 +117,64 @@
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet2)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet8)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn1,
+            this.lechallcodeDataGridViewTextBoxColumn,
+            this.numstuDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.lechallsBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(12, 61);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(1315, 550);
             this.dataGridView2.TabIndex = 145;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lechallcodeDataGridViewTextBoxColumn
+            // 
+            this.lechallcodeDataGridViewTextBoxColumn.DataPropertyName = "lechallcode";
+            this.lechallcodeDataGridViewTextBoxColumn.HeaderText = "lechallcode";
+            this.lechallcodeDataGridViewTextBoxColumn.Name = "lechallcodeDataGridViewTextBoxColumn";
+            // 
+            // numstuDataGridViewTextBoxColumn
+            // 
+            this.numstuDataGridViewTextBoxColumn.DataPropertyName = "numstu";
+            this.numstuDataGridViewTextBoxColumn.HeaderText = "numstu";
+            this.numstuDataGridViewTextBoxColumn.Name = "numstuDataGridViewTextBoxColumn";
+            // 
+            // lechallsBindingSource
+            // 
+            this.lechallsBindingSource.DataMember = "lechalls";
+            this.lechallsBindingSource.DataSource = this.slsocDataSet6;
+            this.lechallsBindingSource.CurrentChanged += new System.EventHandler(this.lechallsBindingSource_CurrentChanged);
+            // 
+            // slsocDataSet6
+            // 
+            this.slsocDataSet6.DataSetName = "slsocDataSet6";
+            this.slsocDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -108,27 +182,22 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 23);
+            this.label1.Size = new System.Drawing.Size(106, 23);
             this.label1.TabIndex = 142;
-            this.label1.Text = "Username :";
-            // 
-            // btnStusearch
-            // 
-            this.btnStusearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStusearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStusearch.Location = new System.Drawing.Point(592, 13);
-            this.btnStusearch.Name = "btnStusearch";
-            this.btnStusearch.Size = new System.Drawing.Size(126, 32);
-            this.btnStusearch.TabIndex = 144;
-            this.btnStusearch.Text = "Search";
-            this.btnStusearch.UseVisualStyleBackColor = true;
+            this.label1.Text = "Hall Code :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnLechallDelete);
+            this.tabPage2.Controls.Add(this.btnLechallUpdate);
+            this.tabPage2.Controls.Add(this.btnLechallAdd);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.txtNumstu);
             this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.btnStusearch);
+            this.tabPage2.Controls.Add(this.txtHcode);
+            this.tabPage2.Controls.Add(this.btnLechallSearch);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -136,14 +205,84 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lecture Halls";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // textBox1
+            // btnLechallDelete
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(133, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 32);
-            this.textBox1.TabIndex = 143;
+            this.btnLechallDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLechallDelete.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLechallDelete.Location = new System.Drawing.Point(1230, 13);
+            this.btnLechallDelete.Name = "btnLechallDelete";
+            this.btnLechallDelete.Size = new System.Drawing.Size(97, 32);
+            this.btnLechallDelete.TabIndex = 150;
+            this.btnLechallDelete.Text = "Delete";
+            this.btnLechallDelete.UseVisualStyleBackColor = true;
+            this.btnLechallDelete.Click += new System.EventHandler(this.btnLechallDelete_Click);
+            // 
+            // btnLechallUpdate
+            // 
+            this.btnLechallUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLechallUpdate.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLechallUpdate.Location = new System.Drawing.Point(1127, 13);
+            this.btnLechallUpdate.Name = "btnLechallUpdate";
+            this.btnLechallUpdate.Size = new System.Drawing.Size(97, 32);
+            this.btnLechallUpdate.TabIndex = 149;
+            this.btnLechallUpdate.Text = "Update";
+            this.btnLechallUpdate.UseVisualStyleBackColor = true;
+            this.btnLechallUpdate.Click += new System.EventHandler(this.btnLecHallUpdate_Click);
+            // 
+            // btnLechallAdd
+            // 
+            this.btnLechallAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLechallAdd.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLechallAdd.Location = new System.Drawing.Point(1023, 13);
+            this.btnLechallAdd.Name = "btnLechallAdd";
+            this.btnLechallAdd.Size = new System.Drawing.Size(97, 32);
+            this.btnLechallAdd.TabIndex = 148;
+            this.btnLechallAdd.Text = "Add";
+            this.btnLechallAdd.UseVisualStyleBackColor = true;
+            this.btnLechallAdd.Click += new System.EventHandler(this.btnLechallAdd_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(424, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(188, 23);
+            this.label2.TabIndex = 146;
+            this.label2.Text = "Number of Students :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtNumstu
+            // 
+            this.txtNumstu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumstu.Location = new System.Drawing.Point(629, 13);
+            this.txtNumstu.Name = "txtNumstu";
+            this.txtNumstu.Size = new System.Drawing.Size(270, 32);
+            this.txtNumstu.TabIndex = 147;
+            this.txtNumstu.TextChanged += new System.EventHandler(this.txtNumstu_TextChanged);
+            // 
+            // txtHcode
+            // 
+            this.txtHcode.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHcode.Location = new System.Drawing.Point(130, 13);
+            this.txtHcode.Name = "txtHcode";
+            this.txtHcode.Size = new System.Drawing.Size(270, 32);
+            this.txtHcode.TabIndex = 143;
+            this.txtHcode.TextChanged += new System.EventHandler(this.txtHcode_TextChanged);
+            // 
+            // btnLechallSearch
+            // 
+            this.btnLechallSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLechallSearch.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLechallSearch.Location = new System.Drawing.Point(920, 13);
+            this.btnLechallSearch.Name = "btnLechallSearch";
+            this.btnLechallSearch.Size = new System.Drawing.Size(97, 32);
+            this.btnLechallSearch.TabIndex = 144;
+            this.btnLechallSearch.Text = "Search";
+            this.btnLechallSearch.UseVisualStyleBackColor = true;
+            this.btnLechallSearch.Click += new System.EventHandler(this.btnLechallSearch_Click);
             // 
             // dataGridView1
             // 
@@ -159,6 +298,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1083, 473);
             this.dataGridView1.TabIndex = 141;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -189,6 +329,7 @@
             // 
             this.modulesBindingSource.DataMember = "modules";
             this.modulesBindingSource.DataSource = this.slsocDataSet3;
+            this.modulesBindingSource.CurrentChanged += new System.EventHandler(this.modulesBindingSource_CurrentChanged);
             // 
             // slsocDataSet3
             // 
@@ -215,6 +356,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Modules";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // cmbLecname
             // 
@@ -231,11 +373,13 @@
             this.cmbLecname.Size = new System.Drawing.Size(431, 31);
             this.cmbLecname.TabIndex = 153;
             this.cmbLecname.ValueMember = "fname";
+            this.cmbLecname.SelectedIndexChanged += new System.EventHandler(this.cmbLecname_SelectedIndexChanged);
             // 
             // lecturersBindingSource
             // 
             this.lecturersBindingSource.DataMember = "lecturers";
             this.lecturersBindingSource.DataSource = this.slsocDataSet;
+            this.lecturersBindingSource.CurrentChanged += new System.EventHandler(this.lecturersBindingSource_CurrentChanged);
             // 
             // slsocDataSet
             // 
@@ -246,6 +390,7 @@
             // 
             this.lecturersBindingSource1.DataMember = "lecturers";
             this.lecturersBindingSource1.DataSource = this.slsocDataSet2;
+            this.lecturersBindingSource1.CurrentChanged += new System.EventHandler(this.lecturersBindingSource1_CurrentChanged);
             // 
             // slsocDataSet2
             // 
@@ -295,6 +440,7 @@
             this.txtModname.Name = "txtModname";
             this.txtModname.Size = new System.Drawing.Size(431, 32);
             this.txtModname.TabIndex = 149;
+            this.txtModname.TextChanged += new System.EventHandler(this.txtModname_TextChanged);
             // 
             // label12
             // 
@@ -305,6 +451,7 @@
             this.label12.Size = new System.Drawing.Size(140, 23);
             this.label12.TabIndex = 148;
             this.label12.Text = "Module Name :";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtModcode
             // 
@@ -313,6 +460,7 @@
             this.txtModcode.Name = "txtModcode";
             this.txtModcode.Size = new System.Drawing.Size(431, 32);
             this.txtModcode.TabIndex = 147;
+            this.txtModcode.TextChanged += new System.EventHandler(this.txtModcode_TextChanged);
             // 
             // label4
             // 
@@ -323,6 +471,7 @@
             this.label4.Size = new System.Drawing.Size(135, 23);
             this.label4.TabIndex = 146;
             this.label4.Text = "Module Code :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -333,6 +482,7 @@
             this.label3.Size = new System.Drawing.Size(91, 23);
             this.label3.TabIndex = 144;
             this.label3.Text = "Lecturer :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnSearch
             // 
@@ -356,9 +506,19 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1352, 643);
             this.tabControl1.TabIndex = 144;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.txtLabnumstu);
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.txtLabcode);
+            this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -366,6 +526,134 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Labs";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1235, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 32);
+            this.button1.TabIndex = 159;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1132, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 32);
+            this.button2.TabIndex = 158;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1028, 9);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 32);
+            this.button3.TabIndex = 157;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(429, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 23);
+            this.label5.TabIndex = 155;
+            this.label5.Text = "Number of Students :";
+            // 
+            // txtLabnumstu
+            // 
+            this.txtLabnumstu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLabnumstu.Location = new System.Drawing.Point(634, 9);
+            this.txtLabnumstu.Name = "txtLabnumstu";
+            this.txtLabnumstu.Size = new System.Drawing.Size(270, 32);
+            this.txtLabnumstu.TabIndex = 156;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.labcode,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridView3.DataSource = this.labsBindingSource1;
+            this.dataGridView3.Location = new System.Drawing.Point(17, 57);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(1315, 550);
+            this.dataGridView3.TabIndex = 154;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // labcode
+            // 
+            this.labcode.DataPropertyName = "labcode";
+            this.labcode.HeaderText = "labcode";
+            this.labcode.Name = "labcode";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "numstu";
+            this.dataGridViewTextBoxColumn3.HeaderText = "numstu";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // labsBindingSource1
+            // 
+            this.labsBindingSource1.DataMember = "labs";
+            this.labsBindingSource1.DataSource = this.slsocDataSet8;
+            // 
+            // slsocDataSet8
+            // 
+            this.slsocDataSet8.DataSetName = "slsocDataSet8";
+            this.slsocDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 23);
+            this.label6.TabIndex = 151;
+            this.label6.Text = "Lab Code :";
+            // 
+            // txtLabcode
+            // 
+            this.txtLabcode.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLabcode.Location = new System.Drawing.Point(131, 9);
+            this.txtLabcode.Name = "txtLabcode";
+            this.txtLabcode.Size = new System.Drawing.Size(270, 32);
+            this.txtLabcode.TabIndex = 152;
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(925, 9);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 32);
+            this.button4.TabIndex = 153;
+            this.button4.Text = "Search";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -376,17 +664,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1352, 13);
             this.panel2.TabIndex = 143;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1162, 0);
+            this.label9.Location = new System.Drawing.Point(1225, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(183, 13);
+            this.label9.Size = new System.Drawing.Size(120, 13);
             this.label9.TabIndex = 55;
-            this.label9.Text = "SLSOC Lecturers And Students © 2018";
+            this.label9.Text = "SLSOC Academic © 2018";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // btnFeedbacks
             // 
@@ -397,6 +687,7 @@
             this.btnFeedbacks.TabIndex = 6;
             this.btnFeedbacks.Text = "Feedbacks";
             this.btnFeedbacks.UseVisualStyleBackColor = true;
+            this.btnFeedbacks.Click += new System.EventHandler(this.btnFeedbacks_Click);
             // 
             // btnTimetables
             // 
@@ -407,6 +698,7 @@
             this.btnTimetables.TabIndex = 5;
             this.btnTimetables.Text = "Timetables";
             this.btnTimetables.UseVisualStyleBackColor = true;
+            this.btnTimetables.Click += new System.EventHandler(this.btnTimetables_Click);
             // 
             // btnLecstu
             // 
@@ -417,6 +709,7 @@
             this.btnLecstu.TabIndex = 1;
             this.btnLecstu.Text = "Lec / Stu";
             this.btnLecstu.UseVisualStyleBackColor = true;
+            this.btnLecstu.Click += new System.EventHandler(this.btnLecstu_Click);
             // 
             // panel1
             // 
@@ -430,6 +723,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1352, 37);
             this.panel1.TabIndex = 142;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLogout
             // 
@@ -440,6 +734,7 @@
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAcademic
             // 
@@ -452,6 +747,7 @@
             this.btnAcademic.TabIndex = 0;
             this.btnAcademic.Text = "Academic";
             this.btnAcademic.UseVisualStyleBackColor = false;
+            this.btnAcademic.Click += new System.EventHandler(this.btnAcademic_Click);
             // 
             // lecturersTableAdapter
             // 
@@ -474,6 +770,7 @@
             // 
             this.lecturersBindingSource2.DataMember = "lecturers";
             this.lecturersBindingSource2.DataSource = this.slsocDataSet4;
+            this.lecturersBindingSource2.CurrentChanged += new System.EventHandler(this.lecturersBindingSource2_CurrentChanged);
             // 
             // lecturersTableAdapter2
             // 
@@ -488,10 +785,33 @@
             // 
             this.lecturersBindingSource3.DataMember = "lecturers";
             this.lecturersBindingSource3.DataSource = this.slsocDataSet5;
+            this.lecturersBindingSource3.CurrentChanged += new System.EventHandler(this.lecturersBindingSource3_CurrentChanged);
             // 
             // lecturersTableAdapter3
             // 
             this.lecturersTableAdapter3.ClearBeforeFill = true;
+            // 
+            // lechallsTableAdapter
+            // 
+            this.lechallsTableAdapter.ClearBeforeFill = true;
+            // 
+            // slsocDataSet7
+            // 
+            this.slsocDataSet7.DataSetName = "slsocDataSet7";
+            this.slsocDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // labsBindingSource
+            // 
+            this.labsBindingSource.DataMember = "labs";
+            this.labsBindingSource.DataSource = this.slsocDataSet7;
+            // 
+            // labsTableAdapter
+            // 
+            this.labsTableAdapter.ClearBeforeFill = true;
+            // 
+            // labsTableAdapter1
+            // 
+            this.labsTableAdapter1.ClearBeforeFill = true;
             // 
             // ComAcademic
             // 
@@ -508,6 +828,8 @@
             this.Text = "ComAcademic";
             this.Load += new System.EventHandler(this.ComAcademic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lechallsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet6)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -520,6 +842,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet2)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -527,6 +854,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slsocDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,9 +864,8 @@
 
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnStusearch;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHcode;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnSearch;
@@ -579,5 +907,35 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn modcodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lecnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnLechallDelete;
+        private System.Windows.Forms.Button btnLechallUpdate;
+        private System.Windows.Forms.Button btnLechallAdd;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtNumstu;
+        private System.Windows.Forms.Button btnLechallSearch;
+        private slsocDataSet6 slsocDataSet6;
+        private System.Windows.Forms.BindingSource lechallsBindingSource;
+        private slsocDataSet6TableAdapters.lechallsTableAdapter lechallsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lechallcodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numstuDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtLabnumstu;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtLabcode;
+        private System.Windows.Forms.Button button4;
+        private slsocDataSet7 slsocDataSet7;
+        private System.Windows.Forms.BindingSource labsBindingSource;
+        private slsocDataSet7TableAdapters.labsTableAdapter labsTableAdapter;
+        private slsocDataSet8 slsocDataSet8;
+        private System.Windows.Forms.BindingSource labsBindingSource1;
+        private slsocDataSet8TableAdapters.labsTableAdapter labsTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn labcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

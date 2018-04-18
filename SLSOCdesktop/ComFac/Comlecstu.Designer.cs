@@ -102,6 +102,7 @@
             this.btnFeedbacks.TabIndex = 6;
             this.btnFeedbacks.Text = "Feedbacks";
             this.btnFeedbacks.UseVisualStyleBackColor = true;
+            this.btnFeedbacks.Click += new System.EventHandler(this.btnFeedbacks_Click);
             // 
             // btnTimetables
             // 
@@ -112,6 +113,7 @@
             this.btnTimetables.TabIndex = 5;
             this.btnTimetables.Text = "Timetables";
             this.btnTimetables.UseVisualStyleBackColor = true;
+            this.btnTimetables.Click += new System.EventHandler(this.btnTimetables_Click);
             // 
             // btnAcademic
             // 
@@ -122,6 +124,7 @@
             this.btnAcademic.TabIndex = 1;
             this.btnAcademic.Text = "Academic";
             this.btnAcademic.UseVisualStyleBackColor = true;
+            this.btnAcademic.Click += new System.EventHandler(this.btnAcademic_Click);
             // 
             // label10
             // 

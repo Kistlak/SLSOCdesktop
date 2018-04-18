@@ -48,17 +48,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusFac\BusAcademic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusFac\BusAcademic.Designer.cs">
+      <DependentUpon>BusAcademic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusFac\BusFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusFac\BusFeedback.Designer.cs">
+      <DependentUpon>BusFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusFac\BusLecstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusFac\BusLecstu.Designer.cs">
+      <DependentUpon>BusLecstu.cs</DependentUpon>
+    </Compile>
     <Compile Include="BusFac\BusMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BusFac\BusMenu.Designer.cs">
       <DependentUpon>BusMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusFac\BusTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusFac\BusTimetable.Designer.cs">
+      <DependentUpon>BusTimetable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComFac\ComAcademic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ComFac\ComAcademic.Designer.cs">
       <DependentUpon>ComAcademic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComFac\ComFeedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComFac\ComFeedbacks.Designer.cs">
+      <DependentUpon>ComFeedbacks.cs</DependentUpon>
     </Compile>
     <Compile Include="ComFac\Comlecstu.cs">
       <SubType>Form</SubType>
@@ -72,11 +102,41 @@
     <Compile Include="ComFac\ComMenu.Designer.cs">
       <DependentUpon>ComMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComFac\ComTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComFac\ComTimetable.Designer.cs">
+      <DependentUpon>ComTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngFac\EngAcademic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngFac\EngAcademic.Designer.cs">
+      <DependentUpon>EngAcademic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngFac\EngFeedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngFac\EngFeedbacks.Designer.cs">
+      <DependentUpon>EngFeedbacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngFac\EngLecstu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngFac\EngLecstu.Designer.cs">
+      <DependentUpon>EngLecstu.cs</DependentUpon>
+    </Compile>
     <Compile Include="EngFac\EngMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EngFac\EngMenu.Designer.cs">
       <DependentUpon>EngMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EngFac\EngTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngFac\EngTimetable.Designer.cs">
+      <DependentUpon>EngTimetable.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -92,6 +152,16 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference4\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -126,6 +196,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>slsocDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="slsocDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="slsocDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>slsocDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UniMain\Lecturers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +234,26 @@
     <Compile Include="UniMain\UniMenu.Designer.cs">
       <DependentUpon>UniMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BusFac\BusAcademic.resx">
+      <DependentUpon>BusAcademic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusFac\BusFeedback.resx">
+      <DependentUpon>BusFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusFac\BusLecstu.resx">
+      <DependentUpon>BusLecstu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BusFac\BusMenu.resx">
       <DependentUpon>BusMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BusFac\BusTimetable.resx">
+      <DependentUpon>BusTimetable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComFac\ComAcademic.resx">
       <DependentUpon>ComAcademic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComFac\ComFeedbacks.resx">
+      <DependentUpon>ComFeedbacks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComFac\Comlecstu.resx">
       <DependentUpon>Comlecstu.cs</DependentUpon>
@@ -156,8 +261,23 @@
     <EmbeddedResource Include="ComFac\ComMenu.resx">
       <DependentUpon>ComMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ComFac\ComTimetable.resx">
+      <DependentUpon>ComTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngFac\EngAcademic.resx">
+      <DependentUpon>EngAcademic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngFac\EngFeedbacks.resx">
+      <DependentUpon>EngFeedbacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngFac\EngLecstu.resx">
+      <DependentUpon>EngLecstu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EngFac\EngMenu.resx">
       <DependentUpon>EngMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngFac\EngTimetable.resx">
+      <DependentUpon>EngTimetable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -216,10 +336,81 @@
     <None Include="Service References\ServiceReference2\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Labsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Lechallsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Lecturersc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Modulesc.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Studentsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\SLSOCdesktop.ServiceReference2.Timetablesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference2\SLSOCserver.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\service.wsdl" />
+    <None Include="Service References\ServiceReference3\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Labsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Lechallsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Lecturersc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Modulesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Studentsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCdesktop.ServiceReference3.Timetablesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SLSOCserver.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\service.wsdl" />
+    <None Include="Service References\ServiceReference4\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Labsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Lechallsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Lecturersc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Modulesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Studentsc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCdesktop.ServiceReference4.Timetablesc.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SLSOCserver.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="slsocDataSet.xsc">
@@ -288,6 +479,50 @@
     <None Include="slsocDataSet5.xss">
       <DependentUpon>slsocDataSet5.xsd</DependentUpon>
     </None>
+    <None Include="slsocDataSet6.xsc">
+      <DependentUpon>slsocDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet6.xss">
+      <DependentUpon>slsocDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet7.xsc">
+      <DependentUpon>slsocDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet7.xss">
+      <DependentUpon>slsocDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet8.xsc">
+      <DependentUpon>slsocDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet8.xss">
+      <DependentUpon>slsocDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet9.xsc">
+      <DependentUpon>slsocDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="slsocDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>slsocDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="slsocDataSet9.xss">
+      <DependentUpon>slsocDataSet9.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -301,6 +536,8 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
     <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference3\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference4\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
@@ -322,6 +559,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

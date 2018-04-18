@@ -723,18 +723,6 @@ namespace SLSOCdesktop.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/DeleteStudents", ReplyAction="http://tempuri.org/IService1/DeleteStudentsResponse")]
         System.Threading.Tasks.Task<int> DeleteStudentsAsync(SLSOCdesktop.ServiceReference1.Studentsc sdel);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComputingLecturers", ReplyAction="http://tempuri.org/IService1/GetComputingLecturersResponse")]
-        SLSOCdesktop.ServiceReference1.Lecturersc[] GetComputingLecturers();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComputingLecturers", ReplyAction="http://tempuri.org/IService1/GetComputingLecturersResponse")]
-        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Lecturersc[]> GetComputingLecturersAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComputingStudents", ReplyAction="http://tempuri.org/IService1/GetComputingStudentsResponse")]
-        SLSOCdesktop.ServiceReference1.Studentsc[] GetComputingStudents();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComputingStudents", ReplyAction="http://tempuri.org/IService1/GetComputingStudentsResponse")]
-        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc[]> GetComputingStudentsAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchLecsForm", ReplyAction="http://tempuri.org/IService1/SearchLecsFormResponse")]
         SLSOCdesktop.ServiceReference1.Lecturersc SearchLecsForm(string Username);
         
@@ -877,22 +865,6 @@ namespace SLSOCdesktop.ServiceReference1 {
         
         public System.Threading.Tasks.Task<int> DeleteStudentsAsync(SLSOCdesktop.ServiceReference1.Studentsc sdel) {
             return base.Channel.DeleteStudentsAsync(sdel);
-        }
-        
-        public SLSOCdesktop.ServiceReference1.Lecturersc[] GetComputingLecturers() {
-            return base.Channel.GetComputingLecturers();
-        }
-        
-        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Lecturersc[]> GetComputingLecturersAsync() {
-            return base.Channel.GetComputingLecturersAsync();
-        }
-        
-        public SLSOCdesktop.ServiceReference1.Studentsc[] GetComputingStudents() {
-            return base.Channel.GetComputingStudents();
-        }
-        
-        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference1.Studentsc[]> GetComputingStudentsAsync() {
-            return base.Channel.GetComputingStudentsAsync();
         }
         
         public SLSOCdesktop.ServiceReference1.Lecturersc SearchLecsForm(string Username) {

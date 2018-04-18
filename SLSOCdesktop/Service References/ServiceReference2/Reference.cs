@@ -106,6 +106,823 @@ namespace SLSOCdesktop.ServiceReference2 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Lechallsc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Lechallsc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LechallcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NumstuField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lechallcode {
+            get {
+                return this.LechallcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LechallcodeField, value) != true)) {
+                    this.LechallcodeField = value;
+                    this.RaisePropertyChanged("Lechallcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Numstu {
+            get {
+                return this.NumstuField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NumstuField, value) != true)) {
+                    this.NumstuField = value;
+                    this.RaisePropertyChanged("Numstu");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Labsc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Labsc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LabcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NumstuField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Labcode {
+            get {
+                return this.LabcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LabcodeField, value) != true)) {
+                    this.LabcodeField = value;
+                    this.RaisePropertyChanged("Labcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Numstu {
+            get {
+                return this.NumstuField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NumstuField, value) != true)) {
+                    this.NumstuField = value;
+                    this.RaisePropertyChanged("Numstu");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Timetablesc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Timetablesc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BatchField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LabField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LechallField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LecnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TimeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Batch {
+            get {
+                return this.BatchField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BatchField, value) != true)) {
+                    this.BatchField = value;
+                    this.RaisePropertyChanged("Batch");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DateField, value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lab {
+            get {
+                return this.LabField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LabField, value) != true)) {
+                    this.LabField = value;
+                    this.RaisePropertyChanged("Lab");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lechall {
+            get {
+                return this.LechallField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LechallField, value) != true)) {
+                    this.LechallField = value;
+                    this.RaisePropertyChanged("Lechall");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lecname {
+            get {
+                return this.LecnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LecnameField, value) != true)) {
+                    this.LecnameField = value;
+                    this.RaisePropertyChanged("Lecname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Modcode {
+            get {
+                return this.ModcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModcodeField, value) != true)) {
+                    this.ModcodeField = value;
+                    this.RaisePropertyChanged("Modcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Time {
+            get {
+                return this.TimeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TimeField, value) != true)) {
+                    this.TimeField = value;
+                    this.RaisePropertyChanged("Time");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Lecturersc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Lecturersc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AdoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AdtwoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FacultyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string JdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModuleoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModulethreeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModuletwoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Adone {
+            get {
+                return this.AdoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdoneField, value) != true)) {
+                    this.AdoneField = value;
+                    this.RaisePropertyChanged("Adone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Adtwo {
+            get {
+                return this.AdtwoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdtwoField, value) != true)) {
+                    this.AdtwoField = value;
+                    this.RaisePropertyChanged("Adtwo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Faculty {
+            get {
+                return this.FacultyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FacultyField, value) != true)) {
+                    this.FacultyField = value;
+                    this.RaisePropertyChanged("Faculty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Fname {
+            get {
+                return this.FnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FnameField, value) != true)) {
+                    this.FnameField = value;
+                    this.RaisePropertyChanged("Fname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Jdate {
+            get {
+                return this.JdateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JdateField, value) != true)) {
+                    this.JdateField = value;
+                    this.RaisePropertyChanged("Jdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lname {
+            get {
+                return this.LnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LnameField, value) != true)) {
+                    this.LnameField = value;
+                    this.RaisePropertyChanged("Lname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Moduleone {
+            get {
+                return this.ModuleoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModuleoneField, value) != true)) {
+                    this.ModuleoneField = value;
+                    this.RaisePropertyChanged("Moduleone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Modulethree {
+            get {
+                return this.ModulethreeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModulethreeField, value) != true)) {
+                    this.ModulethreeField = value;
+                    this.RaisePropertyChanged("Modulethree");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Moduletwo {
+            get {
+                return this.ModuletwoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModuletwoField, value) != true)) {
+                    this.ModuletwoField = value;
+                    this.RaisePropertyChanged("Moduletwo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Number {
+            get {
+                return this.NumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NumberField, value) != true)) {
+                    this.NumberField = value;
+                    this.RaisePropertyChanged("Number");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Rdate {
+            get {
+                return this.RdateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RdateField, value) != true)) {
+                    this.RdateField = value;
+                    this.RaisePropertyChanged("Rdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Studentsc", Namespace="http://schemas.datacontract.org/2004/07/SLSOCserver")]
+    [System.SerializableAttribute()]
+    public partial class Studentsc : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AdoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AdtwoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ByearField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FacultyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string JdateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NicField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Adone {
+            get {
+                return this.AdoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdoneField, value) != true)) {
+                    this.AdoneField = value;
+                    this.RaisePropertyChanged("Adone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Adtwo {
+            get {
+                return this.AdtwoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdtwoField, value) != true)) {
+                    this.AdtwoField = value;
+                    this.RaisePropertyChanged("Adtwo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Byear {
+            get {
+                return this.ByearField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ByearField, value) != true)) {
+                    this.ByearField = value;
+                    this.RaisePropertyChanged("Byear");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Faculty {
+            get {
+                return this.FacultyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FacultyField, value) != true)) {
+                    this.FacultyField = value;
+                    this.RaisePropertyChanged("Faculty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Fname {
+            get {
+                return this.FnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FnameField, value) != true)) {
+                    this.FnameField = value;
+                    this.RaisePropertyChanged("Fname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdField, value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Jdate {
+            get {
+                return this.JdateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JdateField, value) != true)) {
+                    this.JdateField = value;
+                    this.RaisePropertyChanged("Jdate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lname {
+            get {
+                return this.LnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LnameField, value) != true)) {
+                    this.LnameField = value;
+                    this.RaisePropertyChanged("Lname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nic {
+            get {
+                return this.NicField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NicField, value) != true)) {
+                    this.NicField = value;
+                    this.RaisePropertyChanged("Nic");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Number {
+            get {
+                return this.NumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NumberField, value) != true)) {
+                    this.NumberField = value;
+                    this.RaisePropertyChanged("Number");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference2.IService2")]
     public interface IService2 {
@@ -139,6 +956,102 @@ namespace SLSOCdesktop.ServiceReference2 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComModules", ReplyAction="http://tempuri.org/IService2/DeleteComModulesResponse")]
         System.Threading.Tasks.Task<int> DeleteComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddLecHalls", ReplyAction="http://tempuri.org/IService2/AddLecHallsResponse")]
+        int AddLecHalls(SLSOCdesktop.ServiceReference2.Lechallsc lhd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddLecHalls", ReplyAction="http://tempuri.org/IService2/AddLecHallsResponse")]
+        System.Threading.Tasks.Task<int> AddLecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc lhd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLecHalls", ReplyAction="http://tempuri.org/IService2/SearchLecHallsResponse")]
+        SLSOCdesktop.ServiceReference2.Lechallsc SearchLecHalls(string Lechallcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLecHalls", ReplyAction="http://tempuri.org/IService2/SearchLecHallsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lechallsc> SearchLecHallsAsync(string Lechallcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComLecHalls", ReplyAction="http://tempuri.org/IService2/GetComLecHallsResponse")]
+        SLSOCdesktop.ServiceReference2.Lechallsc[] GetComLecHalls();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComLecHalls", ReplyAction="http://tempuri.org/IService2/GetComLecHallsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lechallsc[]> GetComLecHallsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComlecHalls", ReplyAction="http://tempuri.org/IService2/UpdateComlecHallsResponse")]
+        int UpdateComlecHalls(SLSOCdesktop.ServiceReference2.Lechallsc clhu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComlecHalls", ReplyAction="http://tempuri.org/IService2/UpdateComlecHallsResponse")]
+        System.Threading.Tasks.Task<int> UpdateComlecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc clhu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComLecHalls", ReplyAction="http://tempuri.org/IService2/DeleteComLecHallsResponse")]
+        int DeleteComLecHalls(SLSOCdesktop.ServiceReference2.Lechallsc clhdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComLecHalls", ReplyAction="http://tempuri.org/IService2/DeleteComLecHallsResponse")]
+        System.Threading.Tasks.Task<int> DeleteComLecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc clhdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddLabs", ReplyAction="http://tempuri.org/IService2/AddLabsResponse")]
+        int AddLabs(SLSOCdesktop.ServiceReference2.Labsc lbd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddLabs", ReplyAction="http://tempuri.org/IService2/AddLabsResponse")]
+        System.Threading.Tasks.Task<int> AddLabsAsync(SLSOCdesktop.ServiceReference2.Labsc lbd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLabs", ReplyAction="http://tempuri.org/IService2/SearchLabsResponse")]
+        SLSOCdesktop.ServiceReference2.Labsc SearchLabs(string Labcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLabs", ReplyAction="http://tempuri.org/IService2/SearchLabsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Labsc> SearchLabsAsync(string Labcode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComLabs", ReplyAction="http://tempuri.org/IService2/GetComLabsResponse")]
+        SLSOCdesktop.ServiceReference2.Labsc[] GetComLabs();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComLabs", ReplyAction="http://tempuri.org/IService2/GetComLabsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Labsc[]> GetComLabsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComLabs", ReplyAction="http://tempuri.org/IService2/UpdateComLabsResponse")]
+        int UpdateComLabs(SLSOCdesktop.ServiceReference2.Labsc clbu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/UpdateComLabs", ReplyAction="http://tempuri.org/IService2/UpdateComLabsResponse")]
+        System.Threading.Tasks.Task<int> UpdateComLabsAsync(SLSOCdesktop.ServiceReference2.Labsc clbu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComLabs", ReplyAction="http://tempuri.org/IService2/DeleteComLabsResponse")]
+        int DeleteComLabs(SLSOCdesktop.ServiceReference2.Labsc clbdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/DeleteComLabs", ReplyAction="http://tempuri.org/IService2/DeleteComLabsResponse")]
+        System.Threading.Tasks.Task<int> DeleteComLabsAsync(SLSOCdesktop.ServiceReference2.Labsc clbdel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddTimetables", ReplyAction="http://tempuri.org/IService2/AddTimetablesResponse")]
+        int AddTimetables(SLSOCdesktop.ServiceReference2.Timetablesc td);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/AddTimetables", ReplyAction="http://tempuri.org/IService2/AddTimetablesResponse")]
+        System.Threading.Tasks.Task<int> AddTimetablesAsync(SLSOCdesktop.ServiceReference2.Timetablesc td);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComTimetables", ReplyAction="http://tempuri.org/IService2/GetComTimetablesResponse")]
+        SLSOCdesktop.ServiceReference2.Timetablesc[] GetComTimetables();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComTimetables", ReplyAction="http://tempuri.org/IService2/GetComTimetablesResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Timetablesc[]> GetComTimetablesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComputingLecturers", ReplyAction="http://tempuri.org/IService2/GetComputingLecturersResponse")]
+        SLSOCdesktop.ServiceReference2.Lecturersc[] GetComputingLecturers();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComputingLecturers", ReplyAction="http://tempuri.org/IService2/GetComputingLecturersResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lecturersc[]> GetComputingLecturersAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComputingStudents", ReplyAction="http://tempuri.org/IService2/GetComputingStudentsResponse")]
+        SLSOCdesktop.ServiceReference2.Studentsc[] GetComputingStudents();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/GetComputingStudents", ReplyAction="http://tempuri.org/IService2/GetComputingStudentsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Studentsc[]> GetComputingStudentsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLecturers", ReplyAction="http://tempuri.org/IService2/SearchLecturersResponse")]
+        SLSOCdesktop.ServiceReference2.Lecturersc SearchLecturers(SLSOCdesktop.ServiceReference2.Lecturersc ls);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchLecturers", ReplyAction="http://tempuri.org/IService2/SearchLecturersResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lecturersc> SearchLecturersAsync(SLSOCdesktop.ServiceReference2.Lecturersc ls);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchStudents", ReplyAction="http://tempuri.org/IService2/SearchStudentsResponse")]
+        SLSOCdesktop.ServiceReference2.Studentsc SearchStudents(SLSOCdesktop.ServiceReference2.Studentsc ss);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/SearchStudents", ReplyAction="http://tempuri.org/IService2/SearchStudentsResponse")]
+        System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Studentsc> SearchStudentsAsync(SLSOCdesktop.ServiceReference2.Studentsc ss);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -206,6 +1119,134 @@ namespace SLSOCdesktop.ServiceReference2 {
         
         public System.Threading.Tasks.Task<int> DeleteComModulesAsync(SLSOCdesktop.ServiceReference2.Modulesc cmdel) {
             return base.Channel.DeleteComModulesAsync(cmdel);
+        }
+        
+        public int AddLecHalls(SLSOCdesktop.ServiceReference2.Lechallsc lhd) {
+            return base.Channel.AddLecHalls(lhd);
+        }
+        
+        public System.Threading.Tasks.Task<int> AddLecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc lhd) {
+            return base.Channel.AddLecHallsAsync(lhd);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Lechallsc SearchLecHalls(string Lechallcode) {
+            return base.Channel.SearchLecHalls(Lechallcode);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lechallsc> SearchLecHallsAsync(string Lechallcode) {
+            return base.Channel.SearchLecHallsAsync(Lechallcode);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Lechallsc[] GetComLecHalls() {
+            return base.Channel.GetComLecHalls();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lechallsc[]> GetComLecHallsAsync() {
+            return base.Channel.GetComLecHallsAsync();
+        }
+        
+        public int UpdateComlecHalls(SLSOCdesktop.ServiceReference2.Lechallsc clhu) {
+            return base.Channel.UpdateComlecHalls(clhu);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateComlecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc clhu) {
+            return base.Channel.UpdateComlecHallsAsync(clhu);
+        }
+        
+        public int DeleteComLecHalls(SLSOCdesktop.ServiceReference2.Lechallsc clhdel) {
+            return base.Channel.DeleteComLecHalls(clhdel);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteComLecHallsAsync(SLSOCdesktop.ServiceReference2.Lechallsc clhdel) {
+            return base.Channel.DeleteComLecHallsAsync(clhdel);
+        }
+        
+        public int AddLabs(SLSOCdesktop.ServiceReference2.Labsc lbd) {
+            return base.Channel.AddLabs(lbd);
+        }
+        
+        public System.Threading.Tasks.Task<int> AddLabsAsync(SLSOCdesktop.ServiceReference2.Labsc lbd) {
+            return base.Channel.AddLabsAsync(lbd);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Labsc SearchLabs(string Labcode) {
+            return base.Channel.SearchLabs(Labcode);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Labsc> SearchLabsAsync(string Labcode) {
+            return base.Channel.SearchLabsAsync(Labcode);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Labsc[] GetComLabs() {
+            return base.Channel.GetComLabs();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Labsc[]> GetComLabsAsync() {
+            return base.Channel.GetComLabsAsync();
+        }
+        
+        public int UpdateComLabs(SLSOCdesktop.ServiceReference2.Labsc clbu) {
+            return base.Channel.UpdateComLabs(clbu);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateComLabsAsync(SLSOCdesktop.ServiceReference2.Labsc clbu) {
+            return base.Channel.UpdateComLabsAsync(clbu);
+        }
+        
+        public int DeleteComLabs(SLSOCdesktop.ServiceReference2.Labsc clbdel) {
+            return base.Channel.DeleteComLabs(clbdel);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteComLabsAsync(SLSOCdesktop.ServiceReference2.Labsc clbdel) {
+            return base.Channel.DeleteComLabsAsync(clbdel);
+        }
+        
+        public int AddTimetables(SLSOCdesktop.ServiceReference2.Timetablesc td) {
+            return base.Channel.AddTimetables(td);
+        }
+        
+        public System.Threading.Tasks.Task<int> AddTimetablesAsync(SLSOCdesktop.ServiceReference2.Timetablesc td) {
+            return base.Channel.AddTimetablesAsync(td);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Timetablesc[] GetComTimetables() {
+            return base.Channel.GetComTimetables();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Timetablesc[]> GetComTimetablesAsync() {
+            return base.Channel.GetComTimetablesAsync();
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Lecturersc[] GetComputingLecturers() {
+            return base.Channel.GetComputingLecturers();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lecturersc[]> GetComputingLecturersAsync() {
+            return base.Channel.GetComputingLecturersAsync();
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Studentsc[] GetComputingStudents() {
+            return base.Channel.GetComputingStudents();
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Studentsc[]> GetComputingStudentsAsync() {
+            return base.Channel.GetComputingStudentsAsync();
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Lecturersc SearchLecturers(SLSOCdesktop.ServiceReference2.Lecturersc ls) {
+            return base.Channel.SearchLecturers(ls);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Lecturersc> SearchLecturersAsync(SLSOCdesktop.ServiceReference2.Lecturersc ls) {
+            return base.Channel.SearchLecturersAsync(ls);
+        }
+        
+        public SLSOCdesktop.ServiceReference2.Studentsc SearchStudents(SLSOCdesktop.ServiceReference2.Studentsc ss) {
+            return base.Channel.SearchStudents(ss);
+        }
+        
+        public System.Threading.Tasks.Task<SLSOCdesktop.ServiceReference2.Studentsc> SearchStudentsAsync(SLSOCdesktop.ServiceReference2.Studentsc ss) {
+            return base.Channel.SearchStudentsAsync(ss);
         }
     }
 }

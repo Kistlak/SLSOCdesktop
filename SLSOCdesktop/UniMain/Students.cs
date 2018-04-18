@@ -20,7 +20,7 @@ namespace SLSOCdesktop.UniMain
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            //dateTimePicker1.CustomFormat = "dd/MM/yyyy";
         }
 
         private void dateTimePicker2_ValueChanged_1(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace SLSOCdesktop.UniMain
             sdc.Byear = dateTimePicker2.Text;
             sdc.Nic = txtNic.Text;
             sdc.Faculty = cmbFac.SelectedItem.ToString();
-            sdc.Jdate = dateTimePicker1.Value.ToString();
+            sdc.Jdate = cmbBatch.Text;
             sdc.Username = txtUsername.Text;
             sdc.Password = txtPassword.Text;
 
@@ -83,7 +83,7 @@ namespace SLSOCdesktop.UniMain
                 dateTimePicker2.Text = u.Byear;
                 txtNic.Text = u.Nic;
                 cmbFac.Text = u.Faculty;
-                dateTimePicker1.Text = u.Jdate;
+                cmbBatch.Text = u.Jdate;
                 txtUsername.Text = u.Username;
                 txtPassword.Text = u.Password;
             }
@@ -105,6 +105,7 @@ namespace SLSOCdesktop.UniMain
                 us.City = txtCity.Text;
                 us.Number = txtNum.Text;
                 us.Nic = txtNic.Text;
+                us.Jdate = cmbBatch.Text;
                 us.Username = txtUsername.Text;
                 us.Password = txtPassword.Text;
             };

@@ -179,30 +179,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetComputingLecturers">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetComputingLecturersResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="GetComputingLecturersResult" nillable="true" type="q16:ArrayOfLecturersc" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetComputingStudents">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetComputingStudentsResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="GetComputingStudentsResult" nillable="true" type="q17:ArrayOfStudentsc" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="SearchLecsForm">
     <xs:complexType>
       <xs:sequence>
@@ -213,7 +189,7 @@
   <xs:element name="SearchLecsFormResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="SearchLecsFormResult" nillable="true" type="q18:Lecturersc" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="SearchLecsFormResult" nillable="true" type="q16:Lecturersc" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -227,7 +203,7 @@
   <xs:element name="SearchStuFormResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="SearchStuFormResult" nillable="true" type="q19:Studentsc" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SLSOCserver" minOccurs="0" name="SearchStuFormResult" nillable="true" type="q17:Studentsc" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
