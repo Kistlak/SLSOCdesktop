@@ -28,5 +28,33 @@ namespace SLSOCdesktop.EngFac
         {
             this.Close();
         }
+
+        private void btnLecstu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EngFac.EngLecstu form = new EngFac.EngLecstu();
+            form.ShowDialog();
+        }
+
+        private void btnAcademic_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EngFac.EngAcademic form = new EngFac.EngAcademic();
+            form.ShowDialog();
+        }
+
+        private void btnTimetables_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EngFac.EngTimetable form = new EngFac.EngTimetable();
+            form.ShowDialog();
+        }
+
+        private void btnStufeed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EngFac.EngFeedbacks form = new EngFac.EngFeedbacks();
+            form.ShowDialog();
+        }
     }
 }

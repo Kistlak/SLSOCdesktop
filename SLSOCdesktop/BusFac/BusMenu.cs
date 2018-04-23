@@ -28,5 +28,33 @@ namespace SLSOCdesktop.BusFac
         {
             this.Close();
         }
+
+        private void btnLectures_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BusFac.BusLecstu form = new BusFac.BusLecstu();
+            form.ShowDialog();
+        }
+
+        private void btnAcademic_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BusFac.BusAcademic form = new BusFac.BusAcademic();
+            form.ShowDialog();
+        }
+
+        private void btnTimetables_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BusFac.BusTimetable form = new BusFac.BusTimetable();
+            form.ShowDialog();
+        }
+
+        private void btnStufeed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BusFac.BusFeedback form = new BusFac.BusFeedback();
+            form.ShowDialog();
+        }
     }
 }

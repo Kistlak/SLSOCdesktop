@@ -119,6 +119,7 @@
             this.btnStufeed.TabIndex = 22;
             this.btnStufeed.Text = "Student Feedbacks";
             this.btnStufeed.UseVisualStyleBackColor = true;
+            this.btnStufeed.Click += new System.EventHandler(this.btnStufeed_Click);
             // 
             // btnTimetables
             // 
@@ -129,6 +130,7 @@
             this.btnTimetables.TabIndex = 21;
             this.btnTimetables.Text = "Timetables";
             this.btnTimetables.UseVisualStyleBackColor = true;
+            this.btnTimetables.Click += new System.EventHandler(this.btnTimetables_Click);
             // 
             // btnAcademic
             // 
@@ -139,6 +141,7 @@
             this.btnAcademic.TabIndex = 20;
             this.btnAcademic.Text = "Academic";
             this.btnAcademic.UseVisualStyleBackColor = true;
+            this.btnAcademic.Click += new System.EventHandler(this.btnAcademic_Click);
             // 
             // btnLectures
             // 
@@ -149,6 +152,7 @@
             this.btnLectures.TabIndex = 19;
             this.btnLectures.Text = "Lectures / Students";
             this.btnLectures.UseVisualStyleBackColor = true;
+            this.btnLectures.Click += new System.EventHandler(this.btnLectures_Click);
             // 
             // BusMenu
             // 
