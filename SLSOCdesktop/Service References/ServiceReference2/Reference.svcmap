@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1fd4a21a-3753-44f4-9a58-dabe84faf290" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5fef67ca-7d12-44df-b2d5-002fd49882c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1abe5416-a1af-4af4-9698-d556b1e379e8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="742012b4-1a14-4e0c-a351-b03ce07e1c00" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="bb5efd29-a9b9-4c54-9462-4fb8a56c6669" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
-    <MetadataFile FileName="SLSOCserver.xsd" MetadataType="Schema" ID="dbdc63ae-cf7c-4387-af20-6ee7b4277d6c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f8318015-c7a0-482c-9364-571025619b7f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="d4bf3951-cdb3-42c3-bf12-d5be57750bff" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6a24687e-cd83-493b-a35c-13135d57afab" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
+    <MetadataFile FileName="SLSOCserver.xsd" MetadataType="Schema" ID="7bc4dc86-659d-4e34-b89a-7ddb546dea82" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SLSOCserver/Service2/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
